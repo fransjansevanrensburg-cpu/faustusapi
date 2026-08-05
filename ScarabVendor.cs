@@ -257,7 +257,7 @@ public class ScarabVendor : BaseSettingsPlugin<ScarabVendorSettings>
         return true;
     }
 
-    private async SyncTask<bool> OpenFaustusCurrencyExchange(Vector2 windowOffset)
+    private async SyncTask<bool> OpenFaustusCurrencyExchange(SharpDX.Vector2 windowOffset)
     {
         if (GameController.IngameState.IngameUi.CurrencyExchangePanel.IsVisible)
         {
@@ -288,7 +288,7 @@ public class ScarabVendor : BaseSettingsPlugin<ScarabVendorSettings>
         return GameController.IngameState.IngameUi.CurrencyExchangePanel.IsVisible;
     }
 
-    private async SyncTask<bool> DepositInventoryIntoStash(Vector2 windowOffset)
+    private async SyncTask<bool> DepositInventoryIntoStash(SharpDX.Vector2 windowOffset)
     {
         if (!GameController.IngameState.IngameUi.StashElement.IsVisible)
         {
