@@ -207,20 +207,19 @@ public class ScarabVendor : BaseSettingsPlugin<ScarabVendorSettings>
                     break;
                 }
 
-                var orderChildren = GameController.IngameState.IngameUi.CurrencyExchangePanel.OrderElements.Children;
-                if (orderChildren.Count <= 4 || !orderChildren[3].IsVisible || !orderChildren[4].IsVisible)
-                {
-                    break;
-                }
-
-                var completedOrder = orderChildren[3];
-                if (!string.Equals(completedOrder.Text, "Order Completed", StringComparison.OrdinalIgnoreCase))
+                var completedOrder = GameController.IngameState.IngameUi.CurrencyExchangePanel.OrderElements
+                    .FirstOrDefault(order =>
+                        order.Children.Count > 4 &&
+                        order.Children[3].IsVisible &&
+                        order.Children[4].IsVisible &&
+                        string.Equals(order.Children[3].Text, "Order Completed", StringComparison.OrdinalIgnoreCase));
+                if (completedOrder == null)
                 {
                     break;
                 }
 
                 var inventoryStackCountBefore = GetInventoryStackCount();
-                var collectRect = orderChildren[4].GetClientRect();
+                var collectRect = completedOrder.Children[4].GetClientRect();
                 Input.SetCursorPos(new System.Numerics.Vector2(
                     collectRect.Center.X + windowOffset.X,
                     collectRect.Center.Y + windowOffset.Y));
