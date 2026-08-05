@@ -207,7 +207,11 @@ public class ScarabVendor : BaseSettingsPlugin<ScarabVendorSettings>
                     break;
                 }
 
-                var foundCompletedOrder = false;
+                if (!await WaitForCurrencyExchangePanelToSettle())
+                {
+                    break;
+                }
+
                 while (!_stopRequested)
                 {
                     var completedOrder = GameController.IngameState.IngameUi.CurrencyExchangePanel.OrderElements
@@ -221,7 +225,6 @@ public class ScarabVendor : BaseSettingsPlugin<ScarabVendorSettings>
                         break;
                     }
 
-                    foundCompletedOrder = true;
                     var inventoryStackCountBefore = GetInventoryStackCount();
                     var completedItem = completedOrder.Children[4];
                     var collectRect = completedItem.GetClientRect();
@@ -241,7 +244,7 @@ public class ScarabVendor : BaseSettingsPlugin<ScarabVendorSettings>
                     }
                 }
 
-                if (_stopRequested || !foundCompletedOrder || GetInventoryStackCount() == 0)
+                if (_stopRequested || GetInventoryStackCount() == 0)
                 {
                     break;
                 }
@@ -301,6 +304,16 @@ public class ScarabVendor : BaseSettingsPlugin<ScarabVendorSettings>
         }
 
         return GameController.IngameState.IngameUi.CurrencyExchangePanel.IsVisible;
+    }
+
+    private async SyncTask<bool> WaitForCurrencyExchangePanelToSettle()
+    {
+        for (var index = 0; index < 20 && !_stopRequested; index++)
+        {
+            await TaskUtils.NextFrame();
+        }
+
+        return !_stopRequested;
     }
 
     private async SyncTask<bool> CloseAllWindows()
