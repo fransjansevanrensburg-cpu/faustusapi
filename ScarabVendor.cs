@@ -210,12 +210,6 @@ public class ScarabVendor : BaseSettingsPlugin<ScarabVendorSettings>
                     break;
                 }
 
-                if (!await WaitForCurrencyExchangePanelToSettle())
-                {
-                    LogFaustus("Stopping: collection was cancelled while waiting for Currency Exchange.");
-                    break;
-                }
-
                 LogFaustus($"Currency Exchange ready. Order rows: {GameController.IngameState.IngameUi.CurrencyExchangePanel.OrderElements.Count}. Inventory stack count: {GetInventoryStackCount()}.");
                 while (!_stopRequested)
                 {
@@ -335,17 +329,6 @@ public class ScarabVendor : BaseSettingsPlugin<ScarabVendorSettings>
 
         LogFaustus($"Currency Exchange state after interaction. IsVisible: {currencyExchangePanel.IsVisible}; order rows: {currencyExchangePanel.OrderElements.Count}. Continuing with the order scan.");
         return true;
-    }
-
-    private async SyncTask<bool> WaitForCurrencyExchangePanelToSettle()
-    {
-        LogFaustus("Waiting for Currency Exchange order rows to populate.");
-        for (var index = 0; index < 20 && !_stopRequested; index++)
-        {
-            await TaskUtils.NextFrame();
-        }
-
-        return !_stopRequested;
     }
 
     private async SyncTask<bool> CloseAllWindows()
