@@ -211,6 +211,7 @@ public class ScarabVendor : BaseSettingsPlugin<ScarabVendorSettings>
                 }
 
                 LogFaustus($"Currency Exchange ready. Order rows: {GameController.IngameState.IngameUi.CurrencyExchangePanel.OrderElements.Count}. Inventory stack count: {GetInventoryStackCount()}.");
+                LogCurrencyExchangeOrderRows();
                 while (!_stopRequested)
                 {
                     var completedOrder = GameController.IngameState.IngameUi.CurrencyExchangePanel.OrderElements
@@ -221,7 +222,6 @@ public class ScarabVendor : BaseSettingsPlugin<ScarabVendorSettings>
                             IsCompletedOrderStatus(order.Children[3].Text));
                     if (completedOrder == null)
                     {
-                        LogCurrencyExchangeOrderRows();
                         LogFaustus("No visible completed order was found.");
                         break;
                     }
@@ -245,6 +245,7 @@ public class ScarabVendor : BaseSettingsPlugin<ScarabVendorSettings>
                     if (inventoryStackCountAfter <= inventoryStackCountBefore)
                     {
                         LogFaustus("Claim did not change inventory; moving to the stash phase.");
+                        LogCurrencyExchangeOrderRows();
                         break;
                     }
                 }
@@ -423,16 +424,42 @@ public class ScarabVendor : BaseSettingsPlugin<ScarabVendorSettings>
     private void LogCurrencyExchangeOrderRows()
     {
         var orderElements = GameController.IngameState.IngameUi.CurrencyExchangePanel.OrderElements;
-        for (var index = 0; index < orderElements.Count; index++)
-        {
-            var order = orderElements[index];
-            var hasStatusElement = order.Children.Count > 3;
-            var hasItemElement = order.Children.Count > 4;
-            var statusText = hasStatusElement ? order.Children[3].Text ?? "<null>" : "<missing>";
-            var escapedStatusText = statusText.Replace("\r", "\\r").Replace("\n", "\\n");
+        LogFaustus($"Dumping {orderElements.Count} Currency Exchange order row(s).");
 
-            LogFaustus($"Order row {index}: children={order.Children.Count}; child 3 visible={hasStatusElement && order.Children[3].IsVisible}; text=\"{escapedStatusText}\"; child 4 visible={hasItemElement && order.Children[4].IsVisible}.");
+        for (var orderIndex = 0; orderIndex < orderElements.Count; orderIndex++)
+        {
+            var order = orderElements[orderIndex];
+            var orderRect = order.GetClientRect();
+            var matchesCompletedOrder = order.Children.Count > 4 &&
+                order.Children[3].IsVisible &&
+                order.Children[4].IsVisible &&
+                IsCompletedOrderStatus(order.Children[3].Text);
+
+            LogFaustus($"Order row {orderIndex}: type={order.GetType().Name}; children={order.Children.Count}; completed-match={matchesCompletedOrder}; rect=({orderRect.X:F0},{orderRect.Y:F0},{orderRect.Width:F0},{orderRect.Height:F0}).");
+
+            for (var childIndex = 0; childIndex < order.Children.Count; childIndex++)
+            {
+                var child = order.Children[childIndex];
+                var childRect = child.GetClientRect();
+                LogFaustus($"Order row {orderIndex}, child {childIndex}: type={child.GetType().Name}; visible={child.IsVisible}; text=\"{FormatElementText(child.Text)}\"; children={child.Children.Count}; rect=({childRect.X:F0},{childRect.Y:F0},{childRect.Width:F0},{childRect.Height:F0}).");
+
+                for (var nestedChildIndex = 0; nestedChildIndex < child.Children.Count; nestedChildIndex++)
+                {
+                    var nestedChild = child.Children[nestedChildIndex];
+                    var nestedChildRect = nestedChild.GetClientRect();
+                    LogFaustus($"Order row {orderIndex}, child {childIndex}, nested child {nestedChildIndex}: type={nestedChild.GetType().Name}; visible={nestedChild.IsVisible}; text=\"{FormatElementText(nestedChild.Text)}\"; children={nestedChild.Children.Count}; rect=({nestedChildRect.X:F0},{nestedChildRect.Y:F0},{nestedChildRect.Width:F0},{nestedChildRect.Height:F0}).");
+                }
+            }
         }
+    }
+
+    private static string FormatElementText(string elementText)
+    {
+        return (elementText ?? "<null>")
+            .Replace("\\", "\\\\")
+            .Replace("\r", "\\r")
+            .Replace("\n", "\\n")
+            .Replace("\"", "\\\"");
     }
 
     private int GetInventoryStackCount()
