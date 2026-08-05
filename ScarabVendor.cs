@@ -207,40 +207,56 @@ public class ScarabVendor : BaseSettingsPlugin<ScarabVendorSettings>
                     break;
                 }
 
-                var completedOrder = GameController.IngameState.IngameUi.CurrencyExchangePanel.OrderElements
-                    .FirstOrDefault(order =>
-                        order.Children.Count > 4 &&
-                        order.Children[3].IsVisible &&
-                        order.Children[4].IsVisible &&
-                        string.Equals(order.Children[3].Text, "Order Completed", StringComparison.OrdinalIgnoreCase));
-                if (completedOrder == null)
+                var foundCompletedOrder = false;
+                while (!_stopRequested)
+                {
+                    var completedOrder = GameController.IngameState.IngameUi.CurrencyExchangePanel.OrderElements
+                        .FirstOrDefault(order =>
+                            order.Children.Count > 4 &&
+                            order.Children[3].IsVisible &&
+                            order.Children[4].IsVisible &&
+                            string.Equals(order.Children[3].Text, "Order Completed", StringComparison.OrdinalIgnoreCase));
+                    if (completedOrder == null)
+                    {
+                        break;
+                    }
+
+                    foundCompletedOrder = true;
+                    var inventoryStackCountBefore = GetInventoryStackCount();
+                    var completedItem = completedOrder.Children[4];
+                    var collectRect = completedItem.GetClientRect();
+                    Input.SetCursorPos(new System.Numerics.Vector2(
+                        collectRect.Center.X + windowOffset.X,
+                        collectRect.Center.Y + windowOffset.Y));
+                    await System.Threading.Tasks.Task.Delay(Random.Shared.Next(80, 151));
+
+                    Input.KeyDown(Keys.LControlKey);
+                    Input.Click(MouseButtons.Right);
+                    Input.KeyUp(Keys.LControlKey);
+                    await System.Threading.Tasks.Task.Delay(Random.Shared.Next(400, 601));
+
+                    if (GetInventoryStackCount() <= inventoryStackCountBefore)
+                    {
+                        break;
+                    }
+                }
+
+                if (_stopRequested || !foundCompletedOrder || GetInventoryStackCount() == 0)
                 {
                     break;
                 }
 
-                var inventoryStackCountBefore = GetInventoryStackCount();
-                var collectRect = completedOrder.Children[4].GetClientRect();
-                Input.SetCursorPos(new System.Numerics.Vector2(
-                    collectRect.Center.X + windowOffset.X,
-                    collectRect.Center.Y + windowOffset.Y));
-                await System.Threading.Tasks.Task.Delay(Random.Shared.Next(80, 151));
-
-                Input.KeyDown(Keys.LControlKey);
-                Input.Click(MouseButtons.Right);
-                Input.KeyUp(Keys.LControlKey);
-                await System.Threading.Tasks.Task.Delay(Random.Shared.Next(400, 601));
-
-                if (_stopRequested || GetInventoryStackCount() <= inventoryStackCountBefore)
+                if (!await CloseAllWindows())
                 {
                     break;
                 }
-
-                Input.KeyDown(Keys.Space);
-                await TaskUtils.NextFrame();
-                Input.KeyUp(Keys.Space);
-                await System.Threading.Tasks.Task.Delay(Random.Shared.Next(300, 501));
 
                 if (!await DepositInventoryIntoStash(windowOffset))
+                {
+                    break;
+                }
+
+                if (!await CloseAllWindows())
                 {
                     break;
                 }
@@ -285,6 +301,16 @@ public class ScarabVendor : BaseSettingsPlugin<ScarabVendorSettings>
         }
 
         return GameController.IngameState.IngameUi.CurrencyExchangePanel.IsVisible;
+    }
+
+    private async SyncTask<bool> CloseAllWindows()
+    {
+        Input.KeyDown(Keys.Space);
+        await TaskUtils.NextFrame();
+        Input.KeyUp(Keys.Space);
+        await System.Threading.Tasks.Task.Delay(Random.Shared.Next(300, 501));
+
+        return !_stopRequested;
     }
 
     private async SyncTask<bool> DepositInventoryIntoStash(SharpDX.Vector2 windowOffset)
