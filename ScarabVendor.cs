@@ -224,9 +224,10 @@ public class ScarabVendor : BaseSettingsPlugin<ScarabVendorSettings>
                             order.Children.Count > 4 &&
                             order.Children[3].IsVisible &&
                             order.Children[4].IsVisible &&
-                            string.Equals(order.Children[3].Text, "Order Completed", StringComparison.OrdinalIgnoreCase));
+                            IsCompletedOrderStatus(order.Children[3].Text));
                     if (completedOrder == null)
                     {
+                        LogCurrencyExchangeOrderRows();
                         LogFaustus("No visible completed order was found.");
                         break;
                     }
@@ -427,6 +428,28 @@ public class ScarabVendor : BaseSettingsPlugin<ScarabVendorSettings>
     private void LogFaustus(string message)
     {
         LogMessage($"[Faustus] {message}", 5);
+    }
+
+    private static bool IsCompletedOrderStatus(string statusText)
+    {
+        var normalizedStatusText = string.Concat((statusText ?? string.Empty)
+            .Where(character => !char.IsWhiteSpace(character)));
+        return normalizedStatusText.Contains("OrderCompleted", StringComparison.OrdinalIgnoreCase);
+    }
+
+    private void LogCurrencyExchangeOrderRows()
+    {
+        var orderElements = GameController.IngameState.IngameUi.CurrencyExchangePanel.OrderElements;
+        for (var index = 0; index < orderElements.Count; index++)
+        {
+            var order = orderElements[index];
+            var hasStatusElement = order.Children.Count > 3;
+            var hasItemElement = order.Children.Count > 4;
+            var statusText = hasStatusElement ? order.Children[3].Text ?? "<null>" : "<missing>";
+            var escapedStatusText = statusText.Replace("\r", "\\r").Replace("\n", "\\n");
+
+            LogFaustus($"Order row {index}: children={order.Children.Count}; child 3 visible={hasStatusElement && order.Children[3].IsVisible}; text=\"{escapedStatusText}\"; child 4 visible={hasItemElement && order.Children[4].IsVisible}.");
+        }
     }
 
     private int GetInventoryStackCount()
