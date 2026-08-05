@@ -302,9 +302,10 @@ public class ScarabVendor : BaseSettingsPlugin<ScarabVendorSettings>
 
     private async SyncTask<bool> OpenFaustusCurrencyExchange(SharpDX.Vector2 windowOffset)
     {
-        if (GameController.IngameState.IngameUi.CurrencyExchangePanel.IsVisible)
+        var currencyExchangePanel = GameController.IngameState.IngameUi.CurrencyExchangePanel;
+        if (currencyExchangePanel.IsVisible || currencyExchangePanel.OrderElements.Count > 0)
         {
-            LogFaustus("Currency Exchange is already open.");
+            LogFaustus($"Currency Exchange data is already available. IsVisible: {currencyExchangePanel.IsVisible}; order rows: {currencyExchangePanel.OrderElements.Count}.");
             return true;
         }
 
@@ -326,14 +327,13 @@ public class ScarabVendor : BaseSettingsPlugin<ScarabVendorSettings>
         Input.Click(MouseButtons.Left);
         Input.KeyUp(Keys.LControlKey);
 
-        for (var index = 0; index < 40 && !GameController.IngameState.IngameUi.CurrencyExchangePanel.IsVisible; index++)
+        for (var index = 0; index < 40 && !currencyExchangePanel.IsVisible && currencyExchangePanel.OrderElements.Count == 0; index++)
         {
             await TaskUtils.NextFrame();
         }
 
-        var isCurrencyExchangeVisible = GameController.IngameState.IngameUi.CurrencyExchangePanel.IsVisible;
-        LogFaustus($"Currency Exchange visible after interaction: {isCurrencyExchangeVisible}.");
-        return isCurrencyExchangeVisible;
+        LogFaustus($"Currency Exchange state after interaction. IsVisible: {currencyExchangePanel.IsVisible}; order rows: {currencyExchangePanel.OrderElements.Count}. Continuing with the order scan.");
+        return true;
     }
 
     private async SyncTask<bool> WaitForCurrencyExchangePanelToSettle()
