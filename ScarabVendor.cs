@@ -217,8 +217,6 @@ public class ScarabVendor : BaseSettingsPlugin<ScarabVendorSettings>
                     var completedOrder = GameController.IngameState.IngameUi.CurrencyExchangePanel.OrderElements
                         .FirstOrDefault(order =>
                             order.Children.Count > 4 &&
-                            order.Children[3].IsVisible &&
-                            order.Children[4].IsVisible &&
                             IsCompletedOrderStatus(order.Children[3].Text));
                     if (completedOrder == null)
                     {
@@ -438,8 +436,6 @@ public class ScarabVendor : BaseSettingsPlugin<ScarabVendorSettings>
             var order = orderElements[orderIndex];
             var orderRect = order.GetClientRect();
             var matchesCompletedOrder = order.Children.Count > 4 &&
-                order.Children[3].IsVisible &&
-                order.Children[4].IsVisible &&
                 IsCompletedOrderStatus(order.Children[3].Text);
 
             LogFaustus($"Order row {orderIndex}: type={order.GetType().Name}; children={order.Children.Count}; completed-match={matchesCompletedOrder}; rect=({orderRect.X:F0},{orderRect.Y:F0},{orderRect.Width:F0},{orderRect.Height:F0}).");
