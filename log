@@ -1,104 +1,522 @@
-2026-08-06 12:01:53.838 +12:00 [INF] [ScarabVendor] [Faustus] F5 pressed; starting collection loop.
-2026-08-06 12:01:53.838 +12:00 [INF] [ScarabVendor] [Faustus] Collection loop started. Inventory stack count: 0.
-2026-08-06 12:01:53.838 +12:00 [INF] [ScarabVendor] [Faustus] Currency Exchange data is already available. IsVisible: False; order rows: 6.
-2026-08-06 12:01:53.838 +12:00 [INF] [ScarabVendor] [Faustus] Currency Exchange ready. Order rows: 6. Inventory stack count: 0.
-2026-08-06 12:01:53.838 +12:00 [INF] [ScarabVendor] [Faustus] Dumping 6 Currency Exchange order row(s).
-2026-08-06 12:01:53.838 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0: type=CurrencyExchangePanelOrderElement; children=11; completed-match=False; rect=(735,553,530,160).
-2026-08-06 12:01:53.838 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 0: type=Element; visible=False; text="<null>"; children=0; rect=(840,588,290,90).
-2026-08-06 12:01:53.838 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 1: type=Element; visible=False; text="Buying"; children=0; rect=(755,563,140,20).
-2026-08-06 12:01:53.838 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 2: type=Element; visible=False; text="Selling"; children=0; rect=(1075,563,140,20).
-2026-08-06 12:01:53.838 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 3: type=Element; visible=False; text="Order Completed"; children=0; rect=(855,683,260,20).
-2026-08-06 12:01:53.838 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 4: type=Element; visible=False; text="<null>"; children=2; rect=(755,593,80,80).
-2026-08-06 12:01:53.838 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 4, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(745,583,100,100).
-2026-08-06 12:01:53.838 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 4, nested child 1: type=Element; visible=False; text="57.5K"; children=0; rect=(757,593,61,33).
-2026-08-06 12:01:53.838 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 5: type=Element; visible=False; text="<null>"; children=2; rect=(1135,593,80,80).
-2026-08-06 12:01:53.838 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 5, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(1125,583,100,100).
-2026-08-06 12:01:53.838 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 5, nested child 1: type=Element; visible=False; text="0"; children=0; rect=(1137,593,16,33).
-2026-08-06 12:01:53.838 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 6: type=Element; visible=False; text="59,900"; children=0; rect=(843,593,140,40).
-2026-08-06 12:01:53.838 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 7: type=Element; visible=False; text="10,000"; children=0; rect=(983,593,140,40).
-2026-08-06 12:01:53.838 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 8: type=Element; visible=False; text="<<exchange_ratio>> <kalguurlightgrey>{5.99} : <kalguurlightgrey>{1}"; children=0; rect=(843,643,140,30).
-2026-08-06 12:01:53.838 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 9: type=Element; visible=False; text="<null>"; children=0; rect=(983,643,140,30).
-2026-08-06 12:01:53.838 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 10: type=Element; visible=False; text="<null>"; children=0; rect=(1235,623,20,20).
-2026-08-06 12:01:53.838 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1: type=CurrencyExchangePanelOrderElement; children=11; completed-match=False; rect=(1275,553,530,160).
-2026-08-06 12:01:53.838 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 0: type=Element; visible=False; text="<null>"; children=0; rect=(1380,588,290,90).
-2026-08-06 12:01:53.838 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 1: type=Element; visible=False; text="Buying"; children=0; rect=(1295,563,140,20).
-2026-08-06 12:01:53.838 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 2: type=Element; visible=False; text="Selling"; children=0; rect=(1615,563,140,20).
-2026-08-06 12:01:53.838 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 3: type=Element; visible=False; text="Order Completed"; children=0; rect=(1395,683,260,20).
-2026-08-06 12:01:53.839 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 4: type=Element; visible=False; text="<null>"; children=2; rect=(1295,593,80,80).
-2026-08-06 12:01:53.839 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 4, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(1285,583,100,100).
-2026-08-06 12:01:53.839 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 4, nested child 1: type=Element; visible=False; text="4790"; children=0; rect=(1297,593,58,33).
-2026-08-06 12:01:53.839 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 5: type=Element; visible=False; text="<null>"; children=2; rect=(1675,593,80,80).
-2026-08-06 12:01:53.839 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 5, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(1665,583,100,100).
-2026-08-06 12:01:53.839 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 5, nested child 1: type=Element; visible=False; text="0"; children=0; rect=(1677,593,16,33).
-2026-08-06 12:01:53.839 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 6: type=Element; visible=False; text="5,990"; children=0; rect=(1383,593,140,40).
-2026-08-06 12:01:53.839 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 7: type=Element; visible=False; text="1,000"; children=0; rect=(1523,593,140,40).
-2026-08-06 12:01:53.839 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 8: type=Element; visible=False; text="<<exchange_ratio>> <kalguurlightgrey>{5.99} : <kalguurlightgrey>{1}"; children=0; rect=(1383,643,140,30).
-2026-08-06 12:01:53.839 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 9: type=Element; visible=False; text="<null>"; children=0; rect=(1523,643,140,30).
-2026-08-06 12:01:53.839 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 10: type=Element; visible=False; text="<null>"; children=0; rect=(1775,623,20,20).
-2026-08-06 12:01:53.839 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2: type=CurrencyExchangePanelOrderElement; children=11; completed-match=False; rect=(735,723,530,160).
-2026-08-06 12:01:53.839 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 0: type=Element; visible=False; text="<null>"; children=0; rect=(840,758,290,90).
-2026-08-06 12:01:53.839 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 1: type=Element; visible=False; text="Buying"; children=0; rect=(755,733,140,20).
-2026-08-06 12:01:53.839 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 2: type=Element; visible=False; text="Selling"; children=0; rect=(1075,733,140,20).
-2026-08-06 12:01:53.839 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 3: type=Element; visible=False; text="Order Completed"; children=0; rect=(855,853,260,20).
-2026-08-06 12:01:53.839 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 4: type=Element; visible=False; text="<null>"; children=2; rect=(755,763,80,80).
-2026-08-06 12:01:53.839 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 4, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(745,753,100,100).
-2026-08-06 12:01:53.839 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 4, nested child 1: type=Element; visible=False; text="59.9K"; children=0; rect=(757,763,68,33).
-2026-08-06 12:01:53.839 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 5: type=Element; visible=False; text="<null>"; children=2; rect=(1135,763,80,80).
-2026-08-06 12:01:53.839 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 5, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(1125,753,100,100).
-2026-08-06 12:01:53.839 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 5, nested child 1: type=Element; visible=False; text="0"; children=0; rect=(1137,763,16,33).
-2026-08-06 12:01:53.839 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 6: type=Element; visible=False; text="59,900"; children=0; rect=(843,763,140,40).
-2026-08-06 12:01:53.839 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 7: type=Element; visible=False; text="10,000"; children=0; rect=(983,763,140,40).
-2026-08-06 12:01:53.839 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 8: type=Element; visible=False; text="<<exchange_ratio>> <kalguurlightgrey>{5.99} : <kalguurlightgrey>{1}"; children=0; rect=(843,813,140,30).
-2026-08-06 12:01:53.839 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 9: type=Element; visible=False; text="<<actual_ratio>> <kalguurlightgrey>{5.99} : <kalguurlightgrey>{1}"; children=0; rect=(983,813,140,30).
-2026-08-06 12:01:53.839 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 10: type=Element; visible=False; text="<null>"; children=0; rect=(1235,793,20,20).
-2026-08-06 12:01:53.839 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3: type=CurrencyExchangePanelOrderElement; children=11; completed-match=False; rect=(1275,723,530,160).
-2026-08-06 12:01:53.839 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 0: type=Element; visible=False; text="<null>"; children=0; rect=(1380,758,290,90).
-2026-08-06 12:01:53.839 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 1: type=Element; visible=False; text="Buying"; children=0; rect=(1295,733,140,20).
-2026-08-06 12:01:53.839 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 2: type=Element; visible=False; text="Selling"; children=0; rect=(1615,733,140,20).
-2026-08-06 12:01:53.839 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 3: type=Element; visible=False; text="<null>"; children=0; rect=(1395,853,260,20).
-2026-08-06 12:01:53.839 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 4: type=Element; visible=False; text="<null>"; children=2; rect=(1295,763,80,80).
-2026-08-06 12:01:53.839 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 4, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(1285,753,100,100).
-2026-08-06 12:01:53.839 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 4, nested child 1: type=Element; visible=False; text="58.4K"; children=0; rect=(1297,763,65,33).
-2026-08-06 12:01:53.839 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 5: type=Element; visible=False; text="<null>"; children=2; rect=(1675,763,80,80).
-2026-08-06 12:01:53.839 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 5, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(1665,753,100,100).
-2026-08-06 12:01:53.839 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 5, nested child 1: type=Element; visible=False; text="0"; children=0; rect=(1677,763,16,33).
-2026-08-06 12:01:53.839 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 6: type=Element; visible=False; text="59,900"; children=0; rect=(1383,763,140,40).
-2026-08-06 12:01:53.839 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 7: type=Element; visible=False; text="10,000"; children=0; rect=(1523,763,140,40).
-2026-08-06 12:01:53.839 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 8: type=Element; visible=False; text="<<exchange_ratio>> <kalguurlightgrey>{5.99} : <kalguurlightgrey>{1}"; children=0; rect=(1383,813,140,30).
-2026-08-06 12:01:53.839 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 9: type=Element; visible=False; text="<null>"; children=0; rect=(1523,813,140,30).
-2026-08-06 12:01:53.839 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 10: type=Element; visible=False; text="<null>"; children=0; rect=(1775,793,20,20).
-2026-08-06 12:01:53.839 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4: type=CurrencyExchangePanelOrderElement; children=11; completed-match=False; rect=(735,893,530,160).
-2026-08-06 12:01:53.839 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 0: type=Element; visible=False; text="<null>"; children=0; rect=(840,928,290,90).
-2026-08-06 12:01:53.840 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 1: type=Element; visible=False; text="Buying"; children=0; rect=(755,903,140,20).
-2026-08-06 12:01:53.840 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 2: type=Element; visible=False; text="Selling"; children=0; rect=(1075,903,140,20).
-2026-08-06 12:01:53.840 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 3: type=Element; visible=False; text="Order Completed"; children=0; rect=(855,1023,260,20).
-2026-08-06 12:01:53.840 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 4: type=Element; visible=False; text="<null>"; children=2; rect=(755,933,80,80).
-2026-08-06 12:01:53.840 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 4, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(745,923,100,100).
-2026-08-06 12:01:53.840 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 4, nested child 1: type=Element; visible=False; text="59.9K"; children=0; rect=(757,933,68,33).
-2026-08-06 12:01:53.840 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 5: type=Element; visible=False; text="<null>"; children=2; rect=(1135,933,80,80).
-2026-08-06 12:01:53.840 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 5, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(1125,923,100,100).
-2026-08-06 12:01:53.840 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 5, nested child 1: type=Element; visible=False; text="0"; children=0; rect=(1137,933,16,33).
-2026-08-06 12:01:53.840 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 6: type=Element; visible=False; text="59,900"; children=0; rect=(843,933,140,40).
-2026-08-06 12:01:53.840 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 7: type=Element; visible=False; text="10,000"; children=0; rect=(983,933,140,40).
-2026-08-06 12:01:53.840 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 8: type=Element; visible=False; text="<<exchange_ratio>> <kalguurlightgrey>{5.99} : <kalguurlightgrey>{1}"; children=0; rect=(843,983,140,30).
-2026-08-06 12:01:53.840 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 9: type=Element; visible=False; text="<<actual_ratio>> <kalguurlightgrey>{5.99} : <kalguurlightgrey>{1}"; children=0; rect=(983,983,140,30).
-2026-08-06 12:01:53.840 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 10: type=Element; visible=False; text="<null>"; children=0; rect=(1235,963,20,20).
-2026-08-06 12:01:53.840 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5: type=CurrencyExchangePanelOrderElement; children=11; completed-match=False; rect=(1275,893,530,160).
-2026-08-06 12:01:53.840 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 0: type=Element; visible=False; text="<null>"; children=0; rect=(1380,928,290,90).
-2026-08-06 12:01:53.840 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 1: type=Element; visible=False; text="Buying"; children=0; rect=(1295,903,140,20).
-2026-08-06 12:01:53.840 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 2: type=Element; visible=False; text="Selling"; children=0; rect=(1615,903,140,20).
-2026-08-06 12:01:53.840 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 3: type=Element; visible=False; text="Order Completed"; children=0; rect=(1395,1023,260,20).
-2026-08-06 12:01:53.840 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 4: type=Element; visible=False; text="<null>"; children=2; rect=(1295,933,80,80).
-2026-08-06 12:01:53.840 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 4, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(1285,923,100,100).
-2026-08-06 12:01:53.840 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 4, nested child 1: type=Element; visible=False; text="5990"; children=0; rect=(1297,933,61,33).
-2026-08-06 12:01:53.840 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 5: type=Element; visible=False; text="<null>"; children=2; rect=(1675,933,80,80).
-2026-08-06 12:01:53.840 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 5, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(1665,923,100,100).
-2026-08-06 12:01:53.840 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 5, nested child 1: type=Element; visible=False; text="0"; children=0; rect=(1677,933,16,33).
-2026-08-06 12:01:53.840 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 6: type=Element; visible=False; text="5,990"; children=0; rect=(1383,933,140,40).
-2026-08-06 12:01:53.840 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 7: type=Element; visible=False; text="1,000"; children=0; rect=(1523,933,140,40).
-2026-08-06 12:01:53.840 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 8: type=Element; visible=False; text="<<exchange_ratio>> <kalguurlightgrey>{5.99} : <kalguurlightgrey>{1}"; children=0; rect=(1383,983,140,30).
-2026-08-06 12:01:53.840 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 9: type=Element; visible=False; text="<<actual_ratio>> <kalguurlightgrey>{5.99} : <kalguurlightgrey>{1}"; children=0; rect=(1523,983,140,30).
-2026-08-06 12:01:53.840 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 10: type=Element; visible=False; text="<null>"; children=0; rect=(1775,963,20,20).
-2026-08-06 12:01:53.840 +12:00 [INF] [ScarabVendor] [Faustus] No visible completed order was found.
-2026-08-06 12:01:53.840 +12:00 [INF] [ScarabVendor] [Faustus] Stopping: no inventory items are available to stash.
-2026-08-06 12:01:53.840 +12:00 [INF] [ScarabVendor] [Faustus] Collection loop finished.
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] F5 pressed; starting collection loop.
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] Collection loop started. Inventory stack count: 0.
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] Currency Exchange data is already available. IsVisible: False; order rows: 6.
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] Currency Exchange ready. Order rows: 6; raw panel children: 23; inventory stack count: 0.
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] Dumping 6 Currency Exchange order row(s).
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0: type=CurrencyExchangePanelOrderElement; children=11; completed-match=True; rect=(735,553,530,160).
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 0: type=Element; visible=False; text="<null>"; children=0; rect=(840,588,290,90).
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 1: type=Element; visible=False; text="Buying"; children=0; rect=(755,563,140,20).
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 2: type=Element; visible=False; text="Selling"; children=0; rect=(1075,563,140,20).
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 3: type=Element; visible=False; text="Order Completed"; children=0; rect=(855,683,260,20).
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 4: type=Element; visible=False; text="<null>"; children=2; rect=(755,593,80,80).
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 4, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(745,583,100,100).
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 4, nested child 1: type=Element; visible=False; text="57.5K"; children=0; rect=(757,593,61,33).
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 5: type=Element; visible=False; text="<null>"; children=2; rect=(1135,593,80,80).
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 5, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(1125,583,100,100).
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 5, nested child 1: type=Element; visible=False; text="0"; children=0; rect=(1137,593,16,33).
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 6: type=Element; visible=False; text="59,900"; children=0; rect=(843,593,140,40).
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 7: type=Element; visible=False; text="10,000"; children=0; rect=(983,593,140,40).
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 8: type=Element; visible=False; text="<<exchange_ratio>> <kalguurlightgrey>{5.99} : <kalguurlightgrey>{1}"; children=0; rect=(843,643,140,30).
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 9: type=Element; visible=False; text="<null>"; children=0; rect=(983,643,140,30).
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 10: type=Element; visible=False; text="<null>"; children=0; rect=(1235,623,20,20).
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1: type=CurrencyExchangePanelOrderElement; children=11; completed-match=True; rect=(1275,553,530,160).
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 0: type=Element; visible=False; text="<null>"; children=0; rect=(1380,588,290,90).
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 1: type=Element; visible=False; text="Buying"; children=0; rect=(1295,563,140,20).
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 2: type=Element; visible=False; text="Selling"; children=0; rect=(1615,563,140,20).
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 3: type=Element; visible=False; text="Order Completed"; children=0; rect=(1395,683,260,20).
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 4: type=Element; visible=False; text="<null>"; children=2; rect=(1295,593,80,80).
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 4, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(1285,583,100,100).
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 4, nested child 1: type=Element; visible=False; text="4790"; children=0; rect=(1297,593,58,33).
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 5: type=Element; visible=False; text="<null>"; children=2; rect=(1675,593,80,80).
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 5, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(1665,583,100,100).
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 5, nested child 1: type=Element; visible=False; text="0"; children=0; rect=(1677,593,16,33).
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 6: type=Element; visible=False; text="5,990"; children=0; rect=(1383,593,140,40).
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 7: type=Element; visible=False; text="1,000"; children=0; rect=(1523,593,140,40).
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 8: type=Element; visible=False; text="<<exchange_ratio>> <kalguurlightgrey>{5.99} : <kalguurlightgrey>{1}"; children=0; rect=(1383,643,140,30).
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 9: type=Element; visible=False; text="<null>"; children=0; rect=(1523,643,140,30).
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 10: type=Element; visible=False; text="<null>"; children=0; rect=(1775,623,20,20).
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2: type=CurrencyExchangePanelOrderElement; children=11; completed-match=True; rect=(735,723,530,160).
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 0: type=Element; visible=False; text="<null>"; children=0; rect=(840,758,290,90).
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 1: type=Element; visible=False; text="Buying"; children=0; rect=(755,733,140,20).
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 2: type=Element; visible=False; text="Selling"; children=0; rect=(1075,733,140,20).
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 3: type=Element; visible=False; text="Order Completed"; children=0; rect=(855,853,260,20).
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 4: type=Element; visible=False; text="<null>"; children=2; rect=(755,763,80,80).
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 4, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(745,753,100,100).
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 4, nested child 1: type=Element; visible=False; text="59.9K"; children=0; rect=(757,763,68,33).
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 5: type=Element; visible=False; text="<null>"; children=2; rect=(1135,763,80,80).
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 5, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(1125,753,100,100).
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 5, nested child 1: type=Element; visible=False; text="0"; children=0; rect=(1137,763,16,33).
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 6: type=Element; visible=False; text="59,900"; children=0; rect=(843,763,140,40).
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 7: type=Element; visible=False; text="10,000"; children=0; rect=(983,763,140,40).
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 8: type=Element; visible=False; text="<<exchange_ratio>> <kalguurlightgrey>{5.99} : <kalguurlightgrey>{1}"; children=0; rect=(843,813,140,30).
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 9: type=Element; visible=False; text="<<actual_ratio>> <kalguurlightgrey>{5.99} : <kalguurlightgrey>{1}"; children=0; rect=(983,813,140,30).
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 10: type=Element; visible=False; text="<null>"; children=0; rect=(1235,793,20,20).
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3: type=CurrencyExchangePanelOrderElement; children=11; completed-match=False; rect=(1275,723,530,160).
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 0: type=Element; visible=False; text="<null>"; children=0; rect=(1380,758,290,90).
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 1: type=Element; visible=False; text="Buying"; children=0; rect=(1295,733,140,20).
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 2: type=Element; visible=False; text="Selling"; children=0; rect=(1615,733,140,20).
+2026-08-06 12:09:13.087 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 3: type=Element; visible=False; text="<null>"; children=0; rect=(1395,853,260,20).
+2026-08-06 12:09:13.088 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 4: type=Element; visible=False; text="<null>"; children=2; rect=(1295,763,80,80).
+2026-08-06 12:09:13.088 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 4, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(1285,753,100,100).
+2026-08-06 12:09:13.088 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 4, nested child 1: type=Element; visible=False; text="58.4K"; children=0; rect=(1297,763,65,33).
+2026-08-06 12:09:13.088 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 5: type=Element; visible=False; text="<null>"; children=2; rect=(1675,763,80,80).
+2026-08-06 12:09:13.088 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 5, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(1665,753,100,100).
+2026-08-06 12:09:13.088 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 5, nested child 1: type=Element; visible=False; text="0"; children=0; rect=(1677,763,16,33).
+2026-08-06 12:09:13.088 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 6: type=Element; visible=False; text="59,900"; children=0; rect=(1383,763,140,40).
+2026-08-06 12:09:13.088 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 7: type=Element; visible=False; text="10,000"; children=0; rect=(1523,763,140,40).
+2026-08-06 12:09:13.088 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 8: type=Element; visible=False; text="<<exchange_ratio>> <kalguurlightgrey>{5.99} : <kalguurlightgrey>{1}"; children=0; rect=(1383,813,140,30).
+2026-08-06 12:09:13.088 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 9: type=Element; visible=False; text="<null>"; children=0; rect=(1523,813,140,30).
+2026-08-06 12:09:13.088 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 10: type=Element; visible=False; text="<null>"; children=0; rect=(1775,793,20,20).
+2026-08-06 12:09:13.088 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4: type=CurrencyExchangePanelOrderElement; children=11; completed-match=True; rect=(735,893,530,160).
+2026-08-06 12:09:13.088 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 0: type=Element; visible=False; text="<null>"; children=0; rect=(840,928,290,90).
+2026-08-06 12:09:13.088 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 1: type=Element; visible=False; text="Buying"; children=0; rect=(755,903,140,20).
+2026-08-06 12:09:13.088 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 2: type=Element; visible=False; text="Selling"; children=0; rect=(1075,903,140,20).
+2026-08-06 12:09:13.088 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 3: type=Element; visible=False; text="Order Completed"; children=0; rect=(855,1023,260,20).
+2026-08-06 12:09:13.088 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 4: type=Element; visible=False; text="<null>"; children=2; rect=(755,933,80,80).
+2026-08-06 12:09:13.088 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 4, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(745,923,100,100).
+2026-08-06 12:09:13.088 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 4, nested child 1: type=Element; visible=False; text="59.9K"; children=0; rect=(757,933,68,33).
+2026-08-06 12:09:13.088 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 5: type=Element; visible=False; text="<null>"; children=2; rect=(1135,933,80,80).
+2026-08-06 12:09:13.088 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 5, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(1125,923,100,100).
+2026-08-06 12:09:13.088 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 5, nested child 1: type=Element; visible=False; text="0"; children=0; rect=(1137,933,16,33).
+2026-08-06 12:09:13.088 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 6: type=Element; visible=False; text="59,900"; children=0; rect=(843,933,140,40).
+2026-08-06 12:09:13.088 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 7: type=Element; visible=False; text="10,000"; children=0; rect=(983,933,140,40).
+2026-08-06 12:09:13.088 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 8: type=Element; visible=False; text="<<exchange_ratio>> <kalguurlightgrey>{5.99} : <kalguurlightgrey>{1}"; children=0; rect=(843,983,140,30).
+2026-08-06 12:09:13.088 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 9: type=Element; visible=False; text="<<actual_ratio>> <kalguurlightgrey>{5.99} : <kalguurlightgrey>{1}"; children=0; rect=(983,983,140,30).
+2026-08-06 12:09:13.088 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 10: type=Element; visible=False; text="<null>"; children=0; rect=(1235,963,20,20).
+2026-08-06 12:09:13.088 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5: type=CurrencyExchangePanelOrderElement; children=11; completed-match=True; rect=(1275,893,530,160).
+2026-08-06 12:09:13.088 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 0: type=Element; visible=False; text="<null>"; children=0; rect=(1380,928,290,90).
+2026-08-06 12:09:13.088 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 1: type=Element; visible=False; text="Buying"; children=0; rect=(1295,903,140,20).
+2026-08-06 12:09:13.088 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 2: type=Element; visible=False; text="Selling"; children=0; rect=(1615,903,140,20).
+2026-08-06 12:09:13.088 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 3: type=Element; visible=False; text="Order Completed"; children=0; rect=(1395,1023,260,20).
+2026-08-06 12:09:13.088 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 4: type=Element; visible=False; text="<null>"; children=2; rect=(1295,933,80,80).
+2026-08-06 12:09:13.088 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 4, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(1285,923,100,100).
+2026-08-06 12:09:13.088 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 4, nested child 1: type=Element; visible=False; text="5990"; children=0; rect=(1297,933,61,33).
+2026-08-06 12:09:13.088 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 5: type=Element; visible=False; text="<null>"; children=2; rect=(1675,933,80,80).
+2026-08-06 12:09:13.088 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 5, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(1665,923,100,100).
+2026-08-06 12:09:13.088 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 5, nested child 1: type=Element; visible=False; text="0"; children=0; rect=(1677,933,16,33).
+2026-08-06 12:09:13.088 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 6: type=Element; visible=False; text="5,990"; children=0; rect=(1383,933,140,40).
+2026-08-06 12:09:13.088 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 7: type=Element; visible=False; text="1,000"; children=0; rect=(1523,933,140,40).
+2026-08-06 12:09:13.088 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 8: type=Element; visible=False; text="<<exchange_ratio>> <kalguurlightgrey>{5.99} : <kalguurlightgrey>{1}"; children=0; rect=(1383,983,140,30).
+2026-08-06 12:09:13.088 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 9: type=Element; visible=False; text="<<actual_ratio>> <kalguurlightgrey>{5.99} : <kalguurlightgrey>{1}"; children=0; rect=(1523,983,140,30).
+2026-08-06 12:09:13.088 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 10: type=Element; visible=False; text="<null>"; children=0; rect=(1775,963,20,20).
+2026-08-06 12:09:13.088 +12:00 [INF] [ScarabVendor] [Faustus] Completed order found. Ctrl + Right Clicking child 4; inventory stack count before: 0.
+2026-08-06 12:09:13.828 +12:00 [INF] [ScarabVendor] [Faustus] Claim attempt complete. Inventory stack count: 0 -> 0.
+2026-08-06 12:09:13.828 +12:00 [INF] [ScarabVendor] [Faustus] Claim did not change inventory; moving to the stash phase.
+2026-08-06 12:09:13.828 +12:00 [INF] [ScarabVendor] [Faustus] Stopping: no inventory items are available to stash.
+2026-08-06 12:09:13.828 +12:00 [INF] [ScarabVendor] [Faustus] Collection loop finished.
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] F5 pressed; starting collection loop.
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Collection loop started. Inventory stack count: 0.
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Currency Exchange data is already available. IsVisible: False; order rows: 6.
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Currency Exchange ready. Order rows: 6; raw panel children: 23; inventory stack count: 0.
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Dumping 6 Currency Exchange order row(s).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0: type=CurrencyExchangePanelOrderElement; children=11; completed-match=True; rect=(735,553,530,160).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 0: type=Element; visible=False; text="<null>"; children=0; rect=(840,588,290,90).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 1: type=Element; visible=False; text="Buying"; children=0; rect=(755,563,140,20).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 2: type=Element; visible=False; text="Selling"; children=0; rect=(1075,563,140,20).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 3: type=Element; visible=False; text="Order Completed"; children=0; rect=(855,683,260,20).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 4: type=Element; visible=False; text="<null>"; children=2; rect=(755,593,80,80).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 4, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(745,583,100,100).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 4, nested child 1: type=Element; visible=False; text="57.5K"; children=0; rect=(757,593,61,33).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 5: type=Element; visible=False; text="<null>"; children=2; rect=(1135,593,80,80).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 5, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(1125,583,100,100).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 5, nested child 1: type=Element; visible=False; text="0"; children=0; rect=(1137,593,16,33).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 6: type=Element; visible=False; text="59,900"; children=0; rect=(843,593,140,40).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 7: type=Element; visible=False; text="10,000"; children=0; rect=(983,593,140,40).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 8: type=Element; visible=False; text="<<exchange_ratio>> <kalguurlightgrey>{5.99} : <kalguurlightgrey>{1}"; children=0; rect=(843,643,140,30).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 9: type=Element; visible=False; text="<null>"; children=0; rect=(983,643,140,30).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 10: type=Element; visible=False; text="<null>"; children=0; rect=(1235,623,20,20).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1: type=CurrencyExchangePanelOrderElement; children=11; completed-match=True; rect=(1275,553,530,160).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 0: type=Element; visible=False; text="<null>"; children=0; rect=(1380,588,290,90).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 1: type=Element; visible=False; text="Buying"; children=0; rect=(1295,563,140,20).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 2: type=Element; visible=False; text="Selling"; children=0; rect=(1615,563,140,20).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 3: type=Element; visible=False; text="Order Completed"; children=0; rect=(1395,683,260,20).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 4: type=Element; visible=False; text="<null>"; children=2; rect=(1295,593,80,80).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 4, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(1285,583,100,100).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 4, nested child 1: type=Element; visible=False; text="4790"; children=0; rect=(1297,593,58,33).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 5: type=Element; visible=False; text="<null>"; children=2; rect=(1675,593,80,80).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 5, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(1665,583,100,100).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 5, nested child 1: type=Element; visible=False; text="0"; children=0; rect=(1677,593,16,33).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 6: type=Element; visible=False; text="5,990"; children=0; rect=(1383,593,140,40).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 7: type=Element; visible=False; text="1,000"; children=0; rect=(1523,593,140,40).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 8: type=Element; visible=False; text="<<exchange_ratio>> <kalguurlightgrey>{5.99} : <kalguurlightgrey>{1}"; children=0; rect=(1383,643,140,30).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 9: type=Element; visible=False; text="<null>"; children=0; rect=(1523,643,140,30).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 10: type=Element; visible=False; text="<null>"; children=0; rect=(1775,623,20,20).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2: type=CurrencyExchangePanelOrderElement; children=11; completed-match=True; rect=(735,723,530,160).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 0: type=Element; visible=False; text="<null>"; children=0; rect=(840,758,290,90).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 1: type=Element; visible=False; text="Buying"; children=0; rect=(755,733,140,20).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 2: type=Element; visible=False; text="Selling"; children=0; rect=(1075,733,140,20).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 3: type=Element; visible=False; text="Order Completed"; children=0; rect=(855,853,260,20).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 4: type=Element; visible=False; text="<null>"; children=2; rect=(755,763,80,80).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 4, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(745,753,100,100).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 4, nested child 1: type=Element; visible=False; text="59.9K"; children=0; rect=(757,763,68,33).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 5: type=Element; visible=False; text="<null>"; children=2; rect=(1135,763,80,80).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 5, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(1125,753,100,100).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 5, nested child 1: type=Element; visible=False; text="0"; children=0; rect=(1137,763,16,33).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 6: type=Element; visible=False; text="59,900"; children=0; rect=(843,763,140,40).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 7: type=Element; visible=False; text="10,000"; children=0; rect=(983,763,140,40).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 8: type=Element; visible=False; text="<<exchange_ratio>> <kalguurlightgrey>{5.99} : <kalguurlightgrey>{1}"; children=0; rect=(843,813,140,30).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 9: type=Element; visible=False; text="<<actual_ratio>> <kalguurlightgrey>{5.99} : <kalguurlightgrey>{1}"; children=0; rect=(983,813,140,30).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 10: type=Element; visible=False; text="<null>"; children=0; rect=(1235,793,20,20).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3: type=CurrencyExchangePanelOrderElement; children=11; completed-match=False; rect=(1275,723,530,160).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 0: type=Element; visible=False; text="<null>"; children=0; rect=(1380,758,290,90).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 1: type=Element; visible=False; text="Buying"; children=0; rect=(1295,733,140,20).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 2: type=Element; visible=False; text="Selling"; children=0; rect=(1615,733,140,20).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 3: type=Element; visible=False; text="<null>"; children=0; rect=(1395,853,260,20).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 4: type=Element; visible=False; text="<null>"; children=2; rect=(1295,763,80,80).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 4, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(1285,753,100,100).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 4, nested child 1: type=Element; visible=False; text="58.4K"; children=0; rect=(1297,763,65,33).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 5: type=Element; visible=False; text="<null>"; children=2; rect=(1675,763,80,80).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 5, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(1665,753,100,100).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 5, nested child 1: type=Element; visible=False; text="0"; children=0; rect=(1677,763,16,33).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 6: type=Element; visible=False; text="59,900"; children=0; rect=(1383,763,140,40).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 7: type=Element; visible=False; text="10,000"; children=0; rect=(1523,763,140,40).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 8: type=Element; visible=False; text="<<exchange_ratio>> <kalguurlightgrey>{5.99} : <kalguurlightgrey>{1}"; children=0; rect=(1383,813,140,30).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 9: type=Element; visible=False; text="<null>"; children=0; rect=(1523,813,140,30).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 10: type=Element; visible=False; text="<null>"; children=0; rect=(1775,793,20,20).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4: type=CurrencyExchangePanelOrderElement; children=11; completed-match=True; rect=(735,893,530,160).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 0: type=Element; visible=False; text="<null>"; children=0; rect=(840,928,290,90).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 1: type=Element; visible=False; text="Buying"; children=0; rect=(755,903,140,20).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 2: type=Element; visible=False; text="Selling"; children=0; rect=(1075,903,140,20).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 3: type=Element; visible=False; text="Order Completed"; children=0; rect=(855,1023,260,20).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 4: type=Element; visible=False; text="<null>"; children=2; rect=(755,933,80,80).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 4, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(745,923,100,100).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 4, nested child 1: type=Element; visible=False; text="59.9K"; children=0; rect=(757,933,68,33).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 5: type=Element; visible=False; text="<null>"; children=2; rect=(1135,933,80,80).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 5, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(1125,923,100,100).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 5, nested child 1: type=Element; visible=False; text="0"; children=0; rect=(1137,933,16,33).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 6: type=Element; visible=False; text="59,900"; children=0; rect=(843,933,140,40).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 7: type=Element; visible=False; text="10,000"; children=0; rect=(983,933,140,40).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 8: type=Element; visible=False; text="<<exchange_ratio>> <kalguurlightgrey>{5.99} : <kalguurlightgrey>{1}"; children=0; rect=(843,983,140,30).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 9: type=Element; visible=False; text="<<actual_ratio>> <kalguurlightgrey>{5.99} : <kalguurlightgrey>{1}"; children=0; rect=(983,983,140,30).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 10: type=Element; visible=False; text="<null>"; children=0; rect=(1235,963,20,20).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5: type=CurrencyExchangePanelOrderElement; children=11; completed-match=True; rect=(1275,893,530,160).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 0: type=Element; visible=False; text="<null>"; children=0; rect=(1380,928,290,90).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 1: type=Element; visible=False; text="Buying"; children=0; rect=(1295,903,140,20).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 2: type=Element; visible=False; text="Selling"; children=0; rect=(1615,903,140,20).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 3: type=Element; visible=False; text="Order Completed"; children=0; rect=(1395,1023,260,20).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 4: type=Element; visible=False; text="<null>"; children=2; rect=(1295,933,80,80).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 4, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(1285,923,100,100).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 4, nested child 1: type=Element; visible=False; text="5990"; children=0; rect=(1297,933,61,33).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 5: type=Element; visible=False; text="<null>"; children=2; rect=(1675,933,80,80).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 5, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(1665,923,100,100).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 5, nested child 1: type=Element; visible=False; text="0"; children=0; rect=(1677,933,16,33).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 6: type=Element; visible=False; text="5,990"; children=0; rect=(1383,933,140,40).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 7: type=Element; visible=False; text="1,000"; children=0; rect=(1523,933,140,40).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 8: type=Element; visible=False; text="<<exchange_ratio>> <kalguurlightgrey>{5.99} : <kalguurlightgrey>{1}"; children=0; rect=(1383,983,140,30).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 9: type=Element; visible=False; text="<<actual_ratio>> <kalguurlightgrey>{5.99} : <kalguurlightgrey>{1}"; children=0; rect=(1523,983,140,30).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 10: type=Element; visible=False; text="<null>"; children=0; rect=(1775,963,20,20).
+2026-08-06 12:09:22.846 +12:00 [INF] [ScarabVendor] [Faustus] Completed order found. Ctrl + Right Clicking child 4; inventory stack count before: 0.
+2026-08-06 12:09:23.462 +12:00 [INF] [ScarabVendor] [Faustus] Claim attempt complete. Inventory stack count: 0 -> 0.
+2026-08-06 12:09:23.462 +12:00 [INF] [ScarabVendor] [Faustus] Claim did not change inventory; moving to the stash phase.
+2026-08-06 12:09:23.462 +12:00 [INF] [ScarabVendor] [Faustus] Stopping: no inventory items are available to stash.
+2026-08-06 12:09:23.462 +12:00 [INF] [ScarabVendor] [Faustus] Collection loop finished.
+2026-08-06 12:09:49.425 +12:00 [INF] [ScarabVendor] [Faustus] F5 pressed; starting collection loop.
+2026-08-06 12:09:49.425 +12:00 [INF] [ScarabVendor] [Faustus] Collection loop started. Inventory stack count: 0.
+2026-08-06 12:09:49.425 +12:00 [INF] [ScarabVendor] [Faustus] Currency Exchange data is already available. IsVisible: True; order rows: 6.
+2026-08-06 12:09:49.425 +12:00 [INF] [ScarabVendor] [Faustus] Currency Exchange ready. Order rows: 6; raw panel children: 23; inventory stack count: 0.
+2026-08-06 12:09:49.425 +12:00 [INF] [ScarabVendor] [Faustus] Dumping 6 Currency Exchange order row(s).
+2026-08-06 12:09:49.425 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0: type=CurrencyExchangePanelOrderElement; children=11; completed-match=True; rect=(735,553,530,160).
+2026-08-06 12:09:49.425 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 0: type=Element; visible=True; text="<null>"; children=0; rect=(840,588,290,90).
+2026-08-06 12:09:49.425 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 1: type=Element; visible=True; text="Buying"; children=0; rect=(755,563,140,20).
+2026-08-06 12:09:49.425 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 2: type=Element; visible=True; text="Selling"; children=0; rect=(1075,563,140,20).
+2026-08-06 12:09:49.425 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 3: type=Element; visible=True; text="Order Completed"; children=0; rect=(855,683,260,20).
+2026-08-06 12:09:49.425 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 4: type=Element; visible=True; text="<null>"; children=2; rect=(755,593,80,80).
+2026-08-06 12:09:49.425 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 4, nested child 0: type=Element; visible=True; text="<null>"; children=0; rect=(745,583,100,100).
+2026-08-06 12:09:49.425 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 4, nested child 1: type=Element; visible=True; text="57.5K"; children=0; rect=(757,593,61,33).
+2026-08-06 12:09:49.425 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 5: type=Element; visible=True; text="<null>"; children=2; rect=(1135,593,80,80).
+2026-08-06 12:09:49.425 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 5, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(1125,583,100,100).
+2026-08-06 12:09:49.425 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 5, nested child 1: type=Element; visible=True; text="0"; children=0; rect=(1137,593,16,33).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 6: type=Element; visible=True; text="59,900"; children=0; rect=(843,593,140,40).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 7: type=Element; visible=True; text="10,000"; children=0; rect=(983,593,140,40).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 8: type=Element; visible=True; text="<<exchange_ratio>> <kalguurlightgrey>{5.99} : <kalguurlightgrey>{1}"; children=0; rect=(843,643,140,30).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 9: type=Element; visible=True; text="<null>"; children=0; rect=(983,643,140,30).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 10: type=Element; visible=False; text="<null>"; children=0; rect=(1235,623,20,20).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1: type=CurrencyExchangePanelOrderElement; children=11; completed-match=True; rect=(1275,553,530,160).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 0: type=Element; visible=True; text="<null>"; children=0; rect=(1380,588,290,90).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 1: type=Element; visible=True; text="Buying"; children=0; rect=(1295,563,140,20).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 2: type=Element; visible=True; text="Selling"; children=0; rect=(1615,563,140,20).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 3: type=Element; visible=True; text="Order Completed"; children=0; rect=(1395,683,260,20).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 4: type=Element; visible=True; text="<null>"; children=2; rect=(1295,593,80,80).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 4, nested child 0: type=Element; visible=True; text="<null>"; children=0; rect=(1285,583,100,100).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 4, nested child 1: type=Element; visible=True; text="4790"; children=0; rect=(1297,593,58,33).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 5: type=Element; visible=True; text="<null>"; children=2; rect=(1675,593,80,80).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 5, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(1665,583,100,100).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 5, nested child 1: type=Element; visible=True; text="0"; children=0; rect=(1677,593,16,33).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 6: type=Element; visible=True; text="5,990"; children=0; rect=(1383,593,140,40).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 7: type=Element; visible=True; text="1,000"; children=0; rect=(1523,593,140,40).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 8: type=Element; visible=True; text="<<exchange_ratio>> <kalguurlightgrey>{5.99} : <kalguurlightgrey>{1}"; children=0; rect=(1383,643,140,30).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 9: type=Element; visible=True; text="<null>"; children=0; rect=(1523,643,140,30).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 10: type=Element; visible=False; text="<null>"; children=0; rect=(1775,623,20,20).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2: type=CurrencyExchangePanelOrderElement; children=11; completed-match=True; rect=(735,723,530,160).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 0: type=Element; visible=True; text="<null>"; children=0; rect=(840,758,290,90).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 1: type=Element; visible=True; text="Buying"; children=0; rect=(755,733,140,20).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 2: type=Element; visible=True; text="Selling"; children=0; rect=(1075,733,140,20).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 3: type=Element; visible=True; text="Order Completed"; children=0; rect=(855,853,260,20).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 4: type=Element; visible=True; text="<null>"; children=2; rect=(755,763,80,80).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 4, nested child 0: type=Element; visible=True; text="<null>"; children=0; rect=(745,753,100,100).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 4, nested child 1: type=Element; visible=True; text="59.9K"; children=0; rect=(757,763,68,33).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 5: type=Element; visible=True; text="<null>"; children=2; rect=(1135,763,80,80).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 5, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(1125,753,100,100).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 5, nested child 1: type=Element; visible=True; text="0"; children=0; rect=(1137,763,16,33).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 6: type=Element; visible=True; text="59,900"; children=0; rect=(843,763,140,40).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 7: type=Element; visible=True; text="10,000"; children=0; rect=(983,763,140,40).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 8: type=Element; visible=True; text="<<exchange_ratio>> <kalguurlightgrey>{5.99} : <kalguurlightgrey>{1}"; children=0; rect=(843,813,140,30).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 9: type=Element; visible=True; text="<<actual_ratio>> <kalguurlightgrey>{5.99} : <kalguurlightgrey>{1}"; children=0; rect=(983,813,140,30).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 10: type=Element; visible=False; text="<null>"; children=0; rect=(1235,793,20,20).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3: type=CurrencyExchangePanelOrderElement; children=11; completed-match=False; rect=(1275,723,530,160).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 0: type=Element; visible=True; text="<null>"; children=0; rect=(1380,758,290,90).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 1: type=Element; visible=True; text="Buying"; children=0; rect=(1295,733,140,20).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 2: type=Element; visible=True; text="Selling"; children=0; rect=(1615,733,140,20).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 3: type=Element; visible=True; text="<null>"; children=0; rect=(1395,853,260,20).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 4: type=Element; visible=True; text="<null>"; children=2; rect=(1295,763,80,80).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 4, nested child 0: type=Element; visible=True; text="<null>"; children=0; rect=(1285,753,100,100).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 4, nested child 1: type=Element; visible=True; text="58.4K"; children=0; rect=(1297,763,65,33).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 5: type=Element; visible=True; text="<null>"; children=2; rect=(1675,763,80,80).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 5, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(1665,753,100,100).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 5, nested child 1: type=Element; visible=True; text="0"; children=0; rect=(1677,763,16,33).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 6: type=Element; visible=True; text="59,900"; children=0; rect=(1383,763,140,40).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 7: type=Element; visible=True; text="10,000"; children=0; rect=(1523,763,140,40).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 8: type=Element; visible=True; text="<<exchange_ratio>> <kalguurlightgrey>{5.99} : <kalguurlightgrey>{1}"; children=0; rect=(1383,813,140,30).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 9: type=Element; visible=True; text="<null>"; children=0; rect=(1523,813,140,30).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 10: type=Element; visible=False; text="<null>"; children=0; rect=(1775,793,20,20).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4: type=CurrencyExchangePanelOrderElement; children=11; completed-match=True; rect=(735,893,530,160).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 0: type=Element; visible=True; text="<null>"; children=0; rect=(840,928,290,90).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 1: type=Element; visible=True; text="Buying"; children=0; rect=(755,903,140,20).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 2: type=Element; visible=True; text="Selling"; children=0; rect=(1075,903,140,20).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 3: type=Element; visible=True; text="Order Completed"; children=0; rect=(855,1023,260,20).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 4: type=Element; visible=True; text="<null>"; children=2; rect=(755,933,80,80).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 4, nested child 0: type=Element; visible=True; text="<null>"; children=0; rect=(745,923,100,100).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 4, nested child 1: type=Element; visible=True; text="59.9K"; children=0; rect=(757,933,68,33).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 5: type=Element; visible=True; text="<null>"; children=2; rect=(1135,933,80,80).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 5, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(1125,923,100,100).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 5, nested child 1: type=Element; visible=True; text="0"; children=0; rect=(1137,933,16,33).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 6: type=Element; visible=True; text="59,900"; children=0; rect=(843,933,140,40).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 7: type=Element; visible=True; text="10,000"; children=0; rect=(983,933,140,40).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 8: type=Element; visible=True; text="<<exchange_ratio>> <kalguurlightgrey>{5.99} : <kalguurlightgrey>{1}"; children=0; rect=(843,983,140,30).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 9: type=Element; visible=True; text="<<actual_ratio>> <kalguurlightgrey>{5.99} : <kalguurlightgrey>{1}"; children=0; rect=(983,983,140,30).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 10: type=Element; visible=False; text="<null>"; children=0; rect=(1235,963,20,20).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5: type=CurrencyExchangePanelOrderElement; children=11; completed-match=True; rect=(1275,893,530,160).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 0: type=Element; visible=True; text="<null>"; children=0; rect=(1380,928,290,90).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 1: type=Element; visible=True; text="Buying"; children=0; rect=(1295,903,140,20).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 2: type=Element; visible=True; text="Selling"; children=0; rect=(1615,903,140,20).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 3: type=Element; visible=True; text="Order Completed"; children=0; rect=(1395,1023,260,20).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 4: type=Element; visible=True; text="<null>"; children=2; rect=(1295,933,80,80).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 4, nested child 0: type=Element; visible=True; text="<null>"; children=0; rect=(1285,923,100,100).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 4, nested child 1: type=Element; visible=True; text="5990"; children=0; rect=(1297,933,61,33).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 5: type=Element; visible=True; text="<null>"; children=2; rect=(1675,933,80,80).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 5, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(1665,923,100,100).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 5, nested child 1: type=Element; visible=True; text="0"; children=0; rect=(1677,933,16,33).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 6: type=Element; visible=True; text="5,990"; children=0; rect=(1383,933,140,40).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 7: type=Element; visible=True; text="1,000"; children=0; rect=(1523,933,140,40).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 8: type=Element; visible=True; text="<<exchange_ratio>> <kalguurlightgrey>{5.99} : <kalguurlightgrey>{1}"; children=0; rect=(1383,983,140,30).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 9: type=Element; visible=True; text="<<actual_ratio>> <kalguurlightgrey>{5.99} : <kalguurlightgrey>{1}"; children=0; rect=(1523,983,140,30).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 10: type=Element; visible=False; text="<null>"; children=0; rect=(1775,963,20,20).
+2026-08-06 12:09:49.426 +12:00 [INF] [ScarabVendor] [Faustus] Completed order found. Ctrl + Right Clicking child 4; inventory stack count before: 0.
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Claim attempt complete. Inventory stack count: 0 -> 0.
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Claim did not change inventory; moving to the stash phase.
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0: type=CurrencyExchangePanelOrderElement; children=11; completed-match=True; rect=(242,553,530,160).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 0: type=Element; visible=True; text="<null>"; children=0; rect=(347,588,290,90).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 1: type=Element; visible=True; text="Buying"; children=0; rect=(262,563,140,20).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 2: type=Element; visible=True; text="Selling"; children=0; rect=(582,563,140,20).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 3: type=Element; visible=True; text="Order Completed"; children=0; rect=(362,683,260,20).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 4: type=Element; visible=True; text="<null>"; children=2; rect=(262,593,80,80).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 4, nested child 0: type=Element; visible=True; text="<null>"; children=0; rect=(252,583,100,100).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 4, nested child 1: type=Element; visible=True; text="57.5K"; children=0; rect=(264,593,61,33).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 5: type=Element; visible=True; text="<null>"; children=2; rect=(642,593,80,80).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 5, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(632,583,100,100).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 5, nested child 1: type=Element; visible=True; text="0"; children=0; rect=(644,593,16,33).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 6: type=Element; visible=True; text="59,900"; children=0; rect=(350,593,140,40).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 7: type=Element; visible=True; text="10,000"; children=0; rect=(490,593,140,40).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 8: type=Element; visible=True; text="<<exchange_ratio>> <kalguurlightgrey>{5.99} : <kalguurlightgrey>{1}"; children=0; rect=(350,643,140,30).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 9: type=Element; visible=True; text="<null>"; children=0; rect=(490,643,140,30).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 10: type=Element; visible=False; text="<null>"; children=0; rect=(742,623,20,20).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1: type=CurrencyExchangePanelOrderElement; children=11; completed-match=True; rect=(782,553,530,160).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 0: type=Element; visible=True; text="<null>"; children=0; rect=(887,588,290,90).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 1: type=Element; visible=True; text="Buying"; children=0; rect=(802,563,140,20).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 2: type=Element; visible=True; text="Selling"; children=0; rect=(1122,563,140,20).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 3: type=Element; visible=True; text="Order Completed"; children=0; rect=(902,683,260,20).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 4: type=Element; visible=True; text="<null>"; children=2; rect=(802,593,80,80).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 4, nested child 0: type=Element; visible=True; text="<null>"; children=0; rect=(792,583,100,100).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 4, nested child 1: type=Element; visible=True; text="4790"; children=0; rect=(804,593,58,33).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 5: type=Element; visible=True; text="<null>"; children=2; rect=(1182,593,80,80).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 5, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(1172,583,100,100).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 5, nested child 1: type=Element; visible=True; text="0"; children=0; rect=(1184,593,16,33).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 6: type=Element; visible=True; text="5,990"; children=0; rect=(890,593,140,40).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 7: type=Element; visible=True; text="1,000"; children=0; rect=(1030,593,140,40).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 8: type=Element; visible=True; text="<<exchange_ratio>> <kalguurlightgrey>{5.99} : <kalguurlightgrey>{1}"; children=0; rect=(890,643,140,30).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 9: type=Element; visible=True; text="<null>"; children=0; rect=(1030,643,140,30).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 10: type=Element; visible=False; text="<null>"; children=0; rect=(1282,623,20,20).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2: type=CurrencyExchangePanelOrderElement; children=11; completed-match=True; rect=(242,723,530,160).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 0: type=Element; visible=True; text="<null>"; children=0; rect=(347,758,290,90).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 1: type=Element; visible=True; text="Buying"; children=0; rect=(262,733,140,20).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 2: type=Element; visible=True; text="Selling"; children=0; rect=(582,733,140,20).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 3: type=Element; visible=True; text="Order Completed"; children=0; rect=(362,853,260,20).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 4: type=Element; visible=True; text="<null>"; children=2; rect=(262,763,80,80).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 4, nested child 0: type=Element; visible=True; text="<null>"; children=0; rect=(252,753,100,100).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 4, nested child 1: type=Element; visible=True; text="59.9K"; children=0; rect=(264,763,68,33).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 5: type=Element; visible=True; text="<null>"; children=2; rect=(642,763,80,80).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 5, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(632,753,100,100).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 5, nested child 1: type=Element; visible=True; text="0"; children=0; rect=(644,763,16,33).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 6: type=Element; visible=True; text="59,900"; children=0; rect=(350,763,140,40).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 7: type=Element; visible=True; text="10,000"; children=0; rect=(490,763,140,40).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 8: type=Element; visible=True; text="<<exchange_ratio>> <kalguurlightgrey>{5.99} : <kalguurlightgrey>{1}"; children=0; rect=(350,813,140,30).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 9: type=Element; visible=True; text="<<actual_ratio>> <kalguurlightgrey>{5.99} : <kalguurlightgrey>{1}"; children=0; rect=(490,813,140,30).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 10: type=Element; visible=False; text="<null>"; children=0; rect=(742,793,20,20).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3: type=CurrencyExchangePanelOrderElement; children=11; completed-match=False; rect=(782,723,530,160).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 0: type=Element; visible=True; text="<null>"; children=0; rect=(887,758,290,90).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 1: type=Element; visible=True; text="Buying"; children=0; rect=(802,733,140,20).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 2: type=Element; visible=True; text="Selling"; children=0; rect=(1122,733,140,20).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 3: type=Element; visible=True; text="<null>"; children=0; rect=(902,853,260,20).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 4: type=Element; visible=True; text="<null>"; children=2; rect=(802,763,80,80).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 4, nested child 0: type=Element; visible=True; text="<null>"; children=0; rect=(792,753,100,100).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 4, nested child 1: type=Element; visible=True; text="58.4K"; children=0; rect=(804,763,65,33).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 5: type=Element; visible=True; text="<null>"; children=2; rect=(1182,763,80,80).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 5, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(1172,753,100,100).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 5, nested child 1: type=Element; visible=True; text="0"; children=0; rect=(1184,763,16,33).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 6: type=Element; visible=True; text="59,900"; children=0; rect=(890,763,140,40).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 7: type=Element; visible=True; text="10,000"; children=0; rect=(1030,763,140,40).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 8: type=Element; visible=True; text="<<exchange_ratio>> <kalguurlightgrey>{5.99} : <kalguurlightgrey>{1}"; children=0; rect=(890,813,140,30).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 9: type=Element; visible=True; text="<null>"; children=0; rect=(1030,813,140,30).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 10: type=Element; visible=False; text="<null>"; children=0; rect=(1282,793,20,20).
+2026-08-06 12:09:49.944 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4: type=CurrencyExchangePanelOrderElement; children=11; completed-match=True; rect=(242,893,530,160).
+2026-08-06 12:09:49.945 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 0: type=Element; visible=True; text="<null>"; children=0; rect=(347,928,290,90).
+2026-08-06 12:09:49.945 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 1: type=Element; visible=True; text="Buying"; children=0; rect=(262,903,140,20).
+2026-08-06 12:09:49.945 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 2: type=Element; visible=True; text="Selling"; children=0; rect=(582,903,140,20).
+2026-08-06 12:09:49.945 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 3: type=Element; visible=True; text="Order Completed"; children=0; rect=(362,1023,260,20).
+2026-08-06 12:09:49.945 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 4: type=Element; visible=True; text="<null>"; children=2; rect=(262,933,80,80).
+2026-08-06 12:09:49.945 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 4, nested child 0: type=Element; visible=True; text="<null>"; children=0; rect=(252,923,100,100).
+2026-08-06 12:09:49.945 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 4, nested child 1: type=Element; visible=True; text="59.9K"; children=0; rect=(264,933,68,33).
+2026-08-06 12:09:49.945 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 5: type=Element; visible=True; text="<null>"; children=2; rect=(642,933,80,80).
+2026-08-06 12:09:49.945 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 5, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(632,923,100,100).
+2026-08-06 12:09:49.945 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 5, nested child 1: type=Element; visible=True; text="0"; children=0; rect=(644,933,16,33).
+2026-08-06 12:09:49.945 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 6: type=Element; visible=True; text="59,900"; children=0; rect=(350,933,140,40).
+2026-08-06 12:09:49.945 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 7: type=Element; visible=True; text="10,000"; children=0; rect=(490,933,140,40).
+2026-08-06 12:09:49.945 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 8: type=Element; visible=True; text="<<exchange_ratio>> <kalguurlightgrey>{5.99} : <kalguurlightgrey>{1}"; children=0; rect=(350,983,140,30).
+2026-08-06 12:09:49.945 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 9: type=Element; visible=True; text="<<actual_ratio>> <kalguurlightgrey>{5.99} : <kalguurlightgrey>{1}"; children=0; rect=(490,983,140,30).
+2026-08-06 12:09:49.945 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 10: type=Element; visible=False; text="<null>"; children=0; rect=(742,963,20,20).
+2026-08-06 12:09:49.945 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5: type=CurrencyExchangePanelOrderElement; children=11; completed-match=True; rect=(782,893,530,160).
+2026-08-06 12:09:49.945 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 0: type=Element; visible=True; text="<null>"; children=0; rect=(887,928,290,90).
+2026-08-06 12:09:49.945 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 1: type=Element; visible=True; text="Buying"; children=0; rect=(802,903,140,20).
+2026-08-06 12:09:49.945 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 2: type=Element; visible=True; text="Selling"; children=0; rect=(1122,903,140,20).
+2026-08-06 12:09:49.945 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 3: type=Element; visible=True; text="Order Completed"; children=0; rect=(902,1023,260,20).
+2026-08-06 12:09:49.945 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 4: type=Element; visible=True; text="<null>"; children=2; rect=(802,933,80,80).
+2026-08-06 12:09:49.945 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 4, nested child 0: type=Element; visible=True; text="<null>"; children=0; rect=(792,923,100,100).
+2026-08-06 12:09:49.945 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 4, nested child 1: type=Element; visible=True; text="5990"; children=0; rect=(804,933,61,33).
+2026-08-06 12:09:49.945 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 5: type=Element; visible=True; text="<null>"; children=2; rect=(1182,933,80,80).
+2026-08-06 12:09:49.945 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 5, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(1172,923,100,100).
+2026-08-06 12:09:49.945 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 5, nested child 1: type=Element; visible=True; text="0"; children=0; rect=(1184,933,16,33).
+2026-08-06 12:09:49.945 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 6: type=Element; visible=True; text="5,990"; children=0; rect=(890,933,140,40).
+2026-08-06 12:09:49.945 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 7: type=Element; visible=True; text="1,000"; children=0; rect=(1030,933,140,40).
+2026-08-06 12:09:49.945 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 8: type=Element; visible=True; text="<<exchange_ratio>> <kalguurlightgrey>{5.99} : <kalguurlightgrey>{1}"; children=0; rect=(890,983,140,30).
+2026-08-06 12:09:49.945 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 9: type=Element; visible=True; text="<<actual_ratio>> <kalguurlightgrey>{5.99} : <kalguurlightgrey>{1}"; children=0; rect=(1030,983,140,30).
+2026-08-06 12:09:49.945 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 10: type=Element; visible=False; text="<null>"; children=0; rect=(1282,963,20,20).
+2026-08-06 12:09:49.945 +12:00 [INF] [ScarabVendor] [Faustus] Stopping: no inventory items are available to stash.
+2026-08-06 12:09:49.945 +12:00 [INF] [ScarabVendor] [Faustus] Collection loop finished.
+2026-08-06 12:10:09.315 +12:00 [INF] [ScarabVendor] [Faustus] F5 pressed; starting collection loop.
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Collection loop started. Inventory stack count: 1200.
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Currency Exchange data is already available. IsVisible: False; order rows: 6.
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Currency Exchange ready. Order rows: 6; raw panel children: 23; inventory stack count: 1200.
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Dumping 6 Currency Exchange order row(s).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0: type=CurrencyExchangePanelOrderElement; children=11; completed-match=True; rect=(242,553,530,160).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 0: type=Element; visible=False; text="<null>"; children=0; rect=(347,588,290,90).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 1: type=Element; visible=False; text="Buying"; children=0; rect=(262,563,140,20).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 2: type=Element; visible=False; text="Selling"; children=0; rect=(582,563,140,20).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 3: type=Element; visible=False; text="Order Completed"; children=0; rect=(362,683,260,20).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 4: type=Element; visible=False; text="<null>"; children=2; rect=(262,593,80,80).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 4, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(252,583,100,100).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 4, nested child 1: type=Element; visible=False; text="56.3K"; children=0; rect=(264,593,65,33).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 5: type=Element; visible=False; text="<null>"; children=2; rect=(642,593,80,80).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 5, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(632,583,100,100).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 5, nested child 1: type=Element; visible=False; text="0"; children=0; rect=(644,593,16,33).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 6: type=Element; visible=False; text="59,900"; children=0; rect=(350,593,140,40).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 7: type=Element; visible=False; text="10,000"; children=0; rect=(490,593,140,40).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 8: type=Element; visible=False; text="<<exchange_ratio>> <kalguurlightgrey>{5.99} : <kalguurlightgrey>{1}"; children=0; rect=(350,643,140,30).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 9: type=Element; visible=False; text="<null>"; children=0; rect=(490,643,140,30).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 0, child 10: type=Element; visible=False; text="<null>"; children=0; rect=(742,623,20,20).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1: type=CurrencyExchangePanelOrderElement; children=11; completed-match=True; rect=(782,553,530,160).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 0: type=Element; visible=False; text="<null>"; children=0; rect=(887,588,290,90).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 1: type=Element; visible=False; text="Buying"; children=0; rect=(802,563,140,20).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 2: type=Element; visible=False; text="Selling"; children=0; rect=(1122,563,140,20).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 3: type=Element; visible=False; text="Order Completed"; children=0; rect=(902,683,260,20).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 4: type=Element; visible=False; text="<null>"; children=2; rect=(802,593,80,80).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 4, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(792,583,100,100).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 4, nested child 1: type=Element; visible=False; text="4790"; children=0; rect=(804,593,58,33).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 5: type=Element; visible=False; text="<null>"; children=2; rect=(1182,593,80,80).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 5, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(1172,583,100,100).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 5, nested child 1: type=Element; visible=False; text="0"; children=0; rect=(1184,593,16,33).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 6: type=Element; visible=False; text="5,990"; children=0; rect=(890,593,140,40).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 7: type=Element; visible=False; text="1,000"; children=0; rect=(1030,593,140,40).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 8: type=Element; visible=False; text="<<exchange_ratio>> <kalguurlightgrey>{5.99} : <kalguurlightgrey>{1}"; children=0; rect=(890,643,140,30).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 9: type=Element; visible=False; text="<null>"; children=0; rect=(1030,643,140,30).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 1, child 10: type=Element; visible=False; text="<null>"; children=0; rect=(1282,623,20,20).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2: type=CurrencyExchangePanelOrderElement; children=11; completed-match=True; rect=(242,723,530,160).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 0: type=Element; visible=False; text="<null>"; children=0; rect=(347,758,290,90).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 1: type=Element; visible=False; text="Buying"; children=0; rect=(262,733,140,20).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 2: type=Element; visible=False; text="Selling"; children=0; rect=(582,733,140,20).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 3: type=Element; visible=False; text="Order Completed"; children=0; rect=(362,853,260,20).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 4: type=Element; visible=False; text="<null>"; children=2; rect=(262,763,80,80).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 4, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(252,753,100,100).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 4, nested child 1: type=Element; visible=False; text="59.9K"; children=0; rect=(264,763,68,33).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 5: type=Element; visible=False; text="<null>"; children=2; rect=(642,763,80,80).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 5, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(632,753,100,100).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 5, nested child 1: type=Element; visible=False; text="0"; children=0; rect=(644,763,16,33).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 6: type=Element; visible=False; text="59,900"; children=0; rect=(350,763,140,40).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 7: type=Element; visible=False; text="10,000"; children=0; rect=(490,763,140,40).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 8: type=Element; visible=False; text="<<exchange_ratio>> <kalguurlightgrey>{5.99} : <kalguurlightgrey>{1}"; children=0; rect=(350,813,140,30).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 9: type=Element; visible=False; text="<<actual_ratio>> <kalguurlightgrey>{5.99} : <kalguurlightgrey>{1}"; children=0; rect=(490,813,140,30).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 2, child 10: type=Element; visible=False; text="<null>"; children=0; rect=(742,793,20,20).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3: type=CurrencyExchangePanelOrderElement; children=11; completed-match=False; rect=(782,723,530,160).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 0: type=Element; visible=False; text="<null>"; children=0; rect=(887,758,290,90).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 1: type=Element; visible=False; text="Buying"; children=0; rect=(802,733,140,20).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 2: type=Element; visible=False; text="Selling"; children=0; rect=(1122,733,140,20).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 3: type=Element; visible=False; text="<null>"; children=0; rect=(902,853,260,20).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 4: type=Element; visible=False; text="<null>"; children=2; rect=(802,763,80,80).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 4, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(792,753,100,100).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 4, nested child 1: type=Element; visible=False; text="58.4K"; children=0; rect=(804,763,65,33).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 5: type=Element; visible=False; text="<null>"; children=2; rect=(1182,763,80,80).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 5, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(1172,753,100,100).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 5, nested child 1: type=Element; visible=False; text="0"; children=0; rect=(1184,763,16,33).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 6: type=Element; visible=False; text="59,900"; children=0; rect=(890,763,140,40).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 7: type=Element; visible=False; text="10,000"; children=0; rect=(1030,763,140,40).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 8: type=Element; visible=False; text="<<exchange_ratio>> <kalguurlightgrey>{5.99} : <kalguurlightgrey>{1}"; children=0; rect=(890,813,140,30).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 9: type=Element; visible=False; text="<null>"; children=0; rect=(1030,813,140,30).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 3, child 10: type=Element; visible=False; text="<null>"; children=0; rect=(1282,793,20,20).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4: type=CurrencyExchangePanelOrderElement; children=11; completed-match=True; rect=(242,893,530,160).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 0: type=Element; visible=False; text="<null>"; children=0; rect=(347,928,290,90).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 1: type=Element; visible=False; text="Buying"; children=0; rect=(262,903,140,20).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 2: type=Element; visible=False; text="Selling"; children=0; rect=(582,903,140,20).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 3: type=Element; visible=False; text="Order Completed"; children=0; rect=(362,1023,260,20).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 4: type=Element; visible=False; text="<null>"; children=2; rect=(262,933,80,80).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 4, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(252,923,100,100).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 4, nested child 1: type=Element; visible=False; text="59.9K"; children=0; rect=(264,933,68,33).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 5: type=Element; visible=False; text="<null>"; children=2; rect=(642,933,80,80).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 5, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(632,923,100,100).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 5, nested child 1: type=Element; visible=False; text="0"; children=0; rect=(644,933,16,33).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 6: type=Element; visible=False; text="59,900"; children=0; rect=(350,933,140,40).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 7: type=Element; visible=False; text="10,000"; children=0; rect=(490,933,140,40).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 8: type=Element; visible=False; text="<<exchange_ratio>> <kalguurlightgrey>{5.99} : <kalguurlightgrey>{1}"; children=0; rect=(350,983,140,30).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 9: type=Element; visible=False; text="<<actual_ratio>> <kalguurlightgrey>{5.99} : <kalguurlightgrey>{1}"; children=0; rect=(490,983,140,30).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 4, child 10: type=Element; visible=False; text="<null>"; children=0; rect=(742,963,20,20).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5: type=CurrencyExchangePanelOrderElement; children=11; completed-match=True; rect=(782,893,530,160).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 0: type=Element; visible=False; text="<null>"; children=0; rect=(887,928,290,90).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 1: type=Element; visible=False; text="Buying"; children=0; rect=(802,903,140,20).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 2: type=Element; visible=False; text="Selling"; children=0; rect=(1122,903,140,20).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 3: type=Element; visible=False; text="Order Completed"; children=0; rect=(902,1023,260,20).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 4: type=Element; visible=False; text="<null>"; children=2; rect=(802,933,80,80).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 4, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(792,923,100,100).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 4, nested child 1: type=Element; visible=False; text="5990"; children=0; rect=(804,933,61,33).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 5: type=Element; visible=False; text="<null>"; children=2; rect=(1182,933,80,80).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 5, nested child 0: type=Element; visible=False; text="<null>"; children=0; rect=(1172,923,100,100).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 5, nested child 1: type=Element; visible=False; text="0"; children=0; rect=(1184,933,16,33).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 6: type=Element; visible=False; text="5,990"; children=0; rect=(890,933,140,40).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 7: type=Element; visible=False; text="1,000"; children=0; rect=(1030,933,140,40).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 8: type=Element; visible=False; text="<<exchange_ratio>> <kalguurlightgrey>{5.99} : <kalguurlightgrey>{1}"; children=0; rect=(890,983,140,30).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 9: type=Element; visible=False; text="<<actual_ratio>> <kalguurlightgrey>{5.99} : <kalguurlightgrey>{1}"; children=0; rect=(1030,983,140,30).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Order row 5, child 10: type=Element; visible=False; text="<null>"; children=0; rect=(1282,963,20,20).
+2026-08-06 12:10:09.316 +12:00 [INF] [ScarabVendor] [Faustus] Completed order found. Ctrl + Right Clicking child 4; inventory stack count before: 1200.
+2026-08-06 12:10:09.958 +12:00 [INF] [ScarabVendor] [Faustus] Claim attempt complete. Inventory stack count: 1200 -> 1200.
+2026-08-06 12:10:09.958 +12:00 [INF] [ScarabVendor] [Faustus] Claim did not change inventory; moving to the stash phase.
+2026-08-06 12:10:09.958 +12:00 [INF] [ScarabVendor] [Faustus] Moving 1200 inventory stacks to stash.
+2026-08-06 12:10:09.958 +12:00 [INF] [ScarabVendor] [Faustus] Pressing Space to close open windows.
+2026-08-06 12:10:10.357 +12:00 [INF] [ScarabVendor] [Faustus] Opening stash.
+2026-08-06 12:10:10.711 +12:00 [INF] [ScarabVendor] [Faustus] Ctrl + Right Clicking 60 inventory item(s) into stash.
