@@ -210,7 +210,7 @@ public class ScarabVendor : BaseSettingsPlugin<ScarabVendorSettings>
                     break;
                 }
 
-                LogFaustus($"Currency Exchange ready. Order rows: {GameController.IngameState.IngameUi.CurrencyExchangePanel.OrderElements.Count}. Inventory stack count: {GetInventoryStackCount()}.");
+                LogFaustus($"Currency Exchange ready. Order rows: {GameController.IngameState.IngameUi.CurrencyExchangePanel.OrderElements.Count}; raw panel children: {GameController.IngameState.IngameUi.CurrencyExchangePanel.Children.Count}; inventory stack count: {GetInventoryStackCount()}.");
                 LogCurrencyExchangeOrderRows();
                 while (!_stopRequested)
                 {
@@ -426,6 +426,13 @@ public class ScarabVendor : BaseSettingsPlugin<ScarabVendorSettings>
         var orderElements = GameController.IngameState.IngameUi.CurrencyExchangePanel.OrderElements;
         LogFaustus($"Dumping {orderElements.Count} Currency Exchange order row(s).");
 
+        if (orderElements.Count == 0)
+        {
+            LogFaustus("OrderElements is empty; dumping the raw Currency Exchange panel tree.");
+            LogRawCurrencyExchangePanelTree();
+            return;
+        }
+
         for (var orderIndex = 0; orderIndex < orderElements.Count; orderIndex++)
         {
             var order = orderElements[orderIndex];
@@ -450,6 +457,44 @@ public class ScarabVendor : BaseSettingsPlugin<ScarabVendorSettings>
                     LogFaustus($"Order row {orderIndex}, child {childIndex}, nested child {nestedChildIndex}: type={nestedChild.GetType().Name}; visible={nestedChild.IsVisible}; text=\"{FormatElementText(nestedChild.Text)}\"; children={nestedChild.Children.Count}; rect=({nestedChildRect.X:F0},{nestedChildRect.Y:F0},{nestedChildRect.Width:F0},{nestedChildRect.Height:F0}).");
                 }
             }
+        }
+    }
+
+    private void LogRawCurrencyExchangePanelTree()
+    {
+        const int maximumNodesToLog = 150;
+        var nodesLogged = 0;
+        var panel = GameController.IngameState.IngameUi.CurrencyExchangePanel;
+        var panelRect = panel.GetClientRect();
+        LogFaustus($"Raw Currency Exchange panel: type={panel.GetType().Name}; children={panel.Children.Count}; rect=({panelRect.X:F0},{panelRect.Y:F0},{panelRect.Width:F0},{panelRect.Height:F0}).");
+
+        for (var firstLevelIndex = 0; firstLevelIndex < panel.Children.Count && nodesLogged < maximumNodesToLog; firstLevelIndex++)
+        {
+            var firstLevelChild = panel.Children[firstLevelIndex];
+            var firstLevelRect = firstLevelChild.GetClientRect();
+            nodesLogged++;
+            LogFaustus($"Panel child {firstLevelIndex}: type={firstLevelChild.GetType().Name}; visible={firstLevelChild.IsVisible}; completed-status={IsCompletedOrderStatus(firstLevelChild.Text)}; text=\"{FormatElementText(firstLevelChild.Text)}\"; children={firstLevelChild.Children.Count}; rect=({firstLevelRect.X:F0},{firstLevelRect.Y:F0},{firstLevelRect.Width:F0},{firstLevelRect.Height:F0}).");
+
+            for (var secondLevelIndex = 0; secondLevelIndex < firstLevelChild.Children.Count && nodesLogged < maximumNodesToLog; secondLevelIndex++)
+            {
+                var secondLevelChild = firstLevelChild.Children[secondLevelIndex];
+                var secondLevelRect = secondLevelChild.GetClientRect();
+                nodesLogged++;
+                LogFaustus($"Panel child {firstLevelIndex}, child {secondLevelIndex}: type={secondLevelChild.GetType().Name}; visible={secondLevelChild.IsVisible}; completed-status={IsCompletedOrderStatus(secondLevelChild.Text)}; text=\"{FormatElementText(secondLevelChild.Text)}\"; children={secondLevelChild.Children.Count}; rect=({secondLevelRect.X:F0},{secondLevelRect.Y:F0},{secondLevelRect.Width:F0},{secondLevelRect.Height:F0}).");
+
+                for (var thirdLevelIndex = 0; thirdLevelIndex < secondLevelChild.Children.Count && nodesLogged < maximumNodesToLog; thirdLevelIndex++)
+                {
+                    var thirdLevelChild = secondLevelChild.Children[thirdLevelIndex];
+                    var thirdLevelRect = thirdLevelChild.GetClientRect();
+                    nodesLogged++;
+                    LogFaustus($"Panel child {firstLevelIndex}, child {secondLevelIndex}, child {thirdLevelIndex}: type={thirdLevelChild.GetType().Name}; visible={thirdLevelChild.IsVisible}; completed-status={IsCompletedOrderStatus(thirdLevelChild.Text)}; text=\"{FormatElementText(thirdLevelChild.Text)}\"; children={thirdLevelChild.Children.Count}; rect=({thirdLevelRect.X:F0},{thirdLevelRect.Y:F0},{thirdLevelRect.Width:F0},{thirdLevelRect.Height:F0}).");
+                }
+            }
+        }
+
+        if (nodesLogged == maximumNodesToLog)
+        {
+            LogFaustus($"Raw panel tree logging stopped after {maximumNodesToLog} nodes.");
         }
     }
 
