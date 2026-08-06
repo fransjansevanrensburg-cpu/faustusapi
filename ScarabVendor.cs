@@ -204,6 +204,12 @@ public class ScarabVendor : BaseSettingsPlugin<ScarabVendorSettings>
             {
                 var windowOffset = GameController.Window.GetWindowRectangleTimeCache.TopLeft;
 
+                if (!await CloseAllWindows())
+                {
+                    LogFaustus("Stopping: collection was cancelled while preparing to interact with Faustus.");
+                    break;
+                }
+
                 if (!await OpenFaustusCurrencyExchange(windowOffset))
                 {
                     LogFaustus("Stopping: Currency Exchange did not open.");
@@ -211,7 +217,7 @@ public class ScarabVendor : BaseSettingsPlugin<ScarabVendorSettings>
                 }
 
                 LogFaustus($"Currency Exchange ready. Order rows: {GameController.IngameState.IngameUi.CurrencyExchangePanel.OrderElements.Count}; raw panel children: {GameController.IngameState.IngameUi.CurrencyExchangePanel.Children.Count}; inventory stack count: {GetInventoryStackCount()}.");
-                LogCurrencyExchangeOrderRows();
+                var noCompletedOrdersRemain = false;
                 while (!_stopRequested)
                 {
                     var completedOrder = GameController.IngameState.IngameUi.CurrencyExchangePanel.OrderElements
@@ -220,7 +226,8 @@ public class ScarabVendor : BaseSettingsPlugin<ScarabVendorSettings>
                             IsCompletedOrderStatus(order.Children[3].Text));
                     if (completedOrder == null)
                     {
-                        LogFaustus("No visible completed order was found.");
+                        noCompletedOrdersRemain = true;
+                        LogFaustus("No completed orders remain.");
                         break;
                     }
 
@@ -243,7 +250,6 @@ public class ScarabVendor : BaseSettingsPlugin<ScarabVendorSettings>
                     if (inventoryStackCountAfter <= inventoryStackCountBefore)
                     {
                         LogFaustus("Claim did not change inventory; moving to the stash phase.");
-                        LogCurrencyExchangeOrderRows();
                         break;
                     }
                 }
@@ -255,32 +261,43 @@ public class ScarabVendor : BaseSettingsPlugin<ScarabVendorSettings>
                 }
 
                 var inventoryStackCount = GetInventoryStackCount();
+                if (inventoryStackCount > 0)
+                {
+                    LogFaustus($"Moving {inventoryStackCount} inventory stacks to stash.");
+                    if (!await CloseAllWindows())
+                    {
+                        LogFaustus("Stopping: collection was cancelled while closing Currency Exchange.");
+                        break;
+                    }
+
+                    if (!await DepositInventoryIntoStash(windowOffset))
+                    {
+                        LogFaustus("Stopping: inventory could not be moved to stash.");
+                        break;
+                    }
+
+                    if (!await CloseAllWindows())
+                    {
+                        LogFaustus("Stopping: collection was cancelled while closing stash.");
+                        break;
+                    }
+
+                    LogFaustus("Stash phase complete.");
+                }
+
+                if (noCompletedOrdersRemain)
+                {
+                    LogFaustus("All completed trades have been collected and stashed.");
+                    break;
+                }
+
                 if (inventoryStackCount == 0)
                 {
-                    LogFaustus("Stopping: no inventory items are available to stash.");
+                    LogFaustus("Stopping: claim did not transfer an item and inventory is empty.");
                     break;
                 }
 
-                LogFaustus($"Moving {inventoryStackCount} inventory stacks to stash.");
-                if (!await CloseAllWindows())
-                {
-                    LogFaustus("Stopping: collection was cancelled while closing Currency Exchange.");
-                    break;
-                }
-
-                if (!await DepositInventoryIntoStash(windowOffset))
-                {
-                    LogFaustus("Stopping: inventory could not be moved to stash.");
-                    break;
-                }
-
-                if (!await CloseAllWindows())
-                {
-                    LogFaustus("Stopping: collection was cancelled while closing stash.");
-                    break;
-                }
-
-                LogFaustus("Stash phase complete; returning to Faustus.");
+                LogFaustus("Returning to Faustus for the next collection pass.");
             }
         }
         finally
@@ -297,12 +314,6 @@ public class ScarabVendor : BaseSettingsPlugin<ScarabVendorSettings>
     private async SyncTask<bool> OpenFaustusCurrencyExchange(SharpDX.Vector2 windowOffset)
     {
         var currencyExchangePanel = GameController.IngameState.IngameUi.CurrencyExchangePanel;
-        if (currencyExchangePanel.IsVisible || currencyExchangePanel.OrderElements.Count > 0)
-        {
-            LogFaustus($"Currency Exchange data is already available. IsVisible: {currencyExchangePanel.IsVisible}; order rows: {currencyExchangePanel.OrderElements.Count}.");
-            return true;
-        }
-
         var faustus = GameController.Entities.FirstOrDefault(x =>
             string.Equals(x.Path, "Metadata/NPC/League/Kalguur/VillageFaustusHideout", StringComparison.OrdinalIgnoreCase) &&
             x.IsTargetable);
@@ -321,12 +332,13 @@ public class ScarabVendor : BaseSettingsPlugin<ScarabVendorSettings>
         Input.Click(MouseButtons.Left);
         Input.KeyUp(Keys.LControlKey);
 
-        for (var index = 0; index < 40 && !currencyExchangePanel.IsVisible && currencyExchangePanel.OrderElements.Count == 0; index++)
+        for (var index = 0; index < 3; index++)
         {
             await TaskUtils.NextFrame();
         }
+        await System.Threading.Tasks.Task.Delay(Random.Shared.Next(350, 501));
 
-        LogFaustus($"Currency Exchange state after interaction. IsVisible: {currencyExchangePanel.IsVisible}; order rows: {currencyExchangePanel.OrderElements.Count}. Continuing with the order scan.");
+        LogFaustus($"Currency Exchange state after interaction. IsVisible: {currencyExchangePanel.IsVisible}; order rows: {currencyExchangePanel.OrderElements.Count}.");
         return true;
     }
 
@@ -334,9 +346,9 @@ public class ScarabVendor : BaseSettingsPlugin<ScarabVendorSettings>
     {
         LogFaustus("Pressing Space to close open windows.");
         Input.KeyDown(Keys.Space);
-        await TaskUtils.NextFrame();
+        await System.Threading.Tasks.Task.Delay(Random.Shared.Next(50, 81));
         Input.KeyUp(Keys.Space);
-        await System.Threading.Tasks.Task.Delay(Random.Shared.Next(300, 501));
+        await System.Threading.Tasks.Task.Delay(Random.Shared.Next(400, 601));
 
         return !_stopRequested;
     }
@@ -403,8 +415,9 @@ public class ScarabVendor : BaseSettingsPlugin<ScarabVendorSettings>
         Input.KeyUp(Keys.LControlKey);
         await System.Threading.Tasks.Task.Delay(Random.Shared.Next(400, 601));
 
-        LogFaustus($"Stash attempt complete. Inventory stack count: {inventoryStackCountBefore} -> {GetInventoryStackCount()}.");
-        return !_stopRequested;
+        var inventoryStackCountAfter = GetInventoryStackCount();
+        LogFaustus($"Stash attempt complete. Inventory stack count: {inventoryStackCountBefore} -> {inventoryStackCountAfter}.");
+        return !_stopRequested && inventoryStackCountAfter < inventoryStackCountBefore;
     }
 
     private void LogFaustus(string message)
