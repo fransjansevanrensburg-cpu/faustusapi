@@ -238,12 +238,12 @@ public class ScarabVendor : BaseSettingsPlugin<ScarabVendorSettings>
                     Input.SetCursorPos(new System.Numerics.Vector2(
                         collectRect.Center.X + windowOffset.X,
                         collectRect.Center.Y + windowOffset.Y));
-                    await System.Threading.Tasks.Task.Delay(Random.Shared.Next(80, 151));
+                    await System.Threading.Tasks.Task.Delay(Random.Shared.Next(200, 301));
 
                     Input.KeyDown(Keys.LControlKey);
                     Input.Click(MouseButtons.Right);
                     Input.KeyUp(Keys.LControlKey);
-                    await System.Threading.Tasks.Task.Delay(Random.Shared.Next(400, 601));
+                    await System.Threading.Tasks.Task.Delay(Random.Shared.Next(750, 1001));
 
                     var inventoryStackCountAfter = GetInventoryStackCount();
                     LogFaustus($"Claim attempt complete. Inventory stack count: {inventoryStackCountBefore} -> {inventoryStackCountAfter}.");
@@ -326,7 +326,7 @@ public class ScarabVendor : BaseSettingsPlugin<ScarabVendorSettings>
         LogFaustus("Opening Currency Exchange with Ctrl + Left Click on Faustus.");
         var screenPos = GameController.IngameState.Camera.WorldToScreen(faustus.Pos);
         Input.SetCursorPos(new System.Numerics.Vector2(screenPos.X + windowOffset.X, screenPos.Y + windowOffset.Y));
-        await System.Threading.Tasks.Task.Delay(Random.Shared.Next(100, 151));
+        await System.Threading.Tasks.Task.Delay(Random.Shared.Next(250, 351));
 
         Input.KeyDown(Keys.LControlKey);
         Input.Click(MouseButtons.Left);
@@ -336,7 +336,7 @@ public class ScarabVendor : BaseSettingsPlugin<ScarabVendorSettings>
         {
             await TaskUtils.NextFrame();
         }
-        await System.Threading.Tasks.Task.Delay(Random.Shared.Next(350, 501));
+        await System.Threading.Tasks.Task.Delay(Random.Shared.Next(1000, 1251));
 
         LogFaustus($"Currency Exchange state after interaction. IsVisible: {currencyExchangePanel.IsVisible}; order rows: {currencyExchangePanel.OrderElements.Count}.");
         return true;
@@ -344,12 +344,31 @@ public class ScarabVendor : BaseSettingsPlugin<ScarabVendorSettings>
 
     private async SyncTask<bool> CloseAllWindows()
     {
-        LogFaustus("Pressing Space to close open windows.");
+        LogFaustus("Pressing Space twice to close open windows.");
+        await PressSpace();
+        await System.Threading.Tasks.Task.Delay(300);
+        await PressSpace();
+        await System.Threading.Tasks.Task.Delay(300);
+
+        var stashIsVisible = GameController.IngameState.IngameUi.StashElement.IsVisible;
+        var currencyExchangeIsVisible = GameController.IngameState.IngameUi.CurrencyExchangePanel.IsVisible;
+        if (stashIsVisible || currencyExchangeIsVisible)
+        {
+            LogFaustus($"A window still reports as open after two Space presses. Stash: {stashIsVisible}; Currency Exchange: {currencyExchangeIsVisible}. Pressing Space again.");
+            await PressSpace();
+            await System.Threading.Tasks.Task.Delay(300);
+        }
+
+        LogFaustus($"Window close state. Stash: {GameController.IngameState.IngameUi.StashElement.IsVisible}; Currency Exchange: {GameController.IngameState.IngameUi.CurrencyExchangePanel.IsVisible}.");
+
+        return !_stopRequested;
+    }
+
+    private async SyncTask<bool> PressSpace()
+    {
         Input.KeyDown(Keys.Space);
         await System.Threading.Tasks.Task.Delay(Random.Shared.Next(50, 81));
         Input.KeyUp(Keys.Space);
-        await System.Threading.Tasks.Task.Delay(Random.Shared.Next(400, 601));
-
         return !_stopRequested;
     }
 
@@ -409,11 +428,11 @@ public class ScarabVendor : BaseSettingsPlugin<ScarabVendorSettings>
 
             var rect = inventoryItem.GetClientRect();
             Input.SetCursorPos(new System.Numerics.Vector2(rect.Center.X + windowOffset.X, rect.Center.Y + windowOffset.Y));
-            await System.Threading.Tasks.Task.Delay(Random.Shared.Next(100, 161));
+            await System.Threading.Tasks.Task.Delay(Random.Shared.Next(25, 31));
             Input.Click(MouseButtons.Right);
         }
         Input.KeyUp(Keys.LControlKey);
-        await System.Threading.Tasks.Task.Delay(Random.Shared.Next(400, 601));
+        await System.Threading.Tasks.Task.Delay(Random.Shared.Next(250, 351));
 
         var inventoryStackCountAfter = GetInventoryStackCount();
         LogFaustus($"Stash attempt complete. Inventory stack count: {inventoryStackCountBefore} -> {inventoryStackCountAfter}.");
